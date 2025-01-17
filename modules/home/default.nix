@@ -11,7 +11,7 @@
      ./gtk.nix                         # gtk theme
      ./hyprland                        # window manager
      ./lazygit.nix
-     ./nvim.nix                        # neovim editor
+     ./nvim                       # neovim editor
      ./p10k/p10k.nix
      ./packages.nix                    # other packages
      ./rofi.nix                        # launcher
