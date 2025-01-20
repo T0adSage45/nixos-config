@@ -21,7 +21,7 @@
         numlock_by_default = false;
         follow_mouse = 1;
         float_switch_override_focus = 0;
-        mouse_refocus = 1;
+        mouse_refocus = 0;
         sensitivity = 1;
         touchpad = {
           natural_scroll = false;

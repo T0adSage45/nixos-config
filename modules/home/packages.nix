@@ -67,12 +67,17 @@
 
     # Languages
     gcc
+        #clang
+    clang-tools
+    glibc
+    stdenv
     gdb
     gnumake
     luarocks
     luajit
     nodejs
     go
+    cargo
 
     python3
     python312Packages.ipython

@@ -12,6 +12,8 @@
      ./hyprland                        # window manager
      ./lazygit.nix
      ./nvim                       # neovim editor
+     ./nemo.nix
+     ./obsidian.nix
      ./p10k/p10k.nix
      ./packages.nix                    # other packages
      ./rofi.nix                        # launcher
@@ -21,7 +23,5 @@
      ./xdg-mimes.nix                   # xdg config
      ./yazi.nix                        # terminal file manager
      ./zsh                            # shel
-     ./nemo.nix
-     ./obsidian.nix
   ];
 }

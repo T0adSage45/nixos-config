@@ -7,6 +7,11 @@
       url = "github:nixos/nixpkgs/nixos-unstable";
     };
 
+   # nvf- neovim config manager
+    nvf = {
+      url = "github:notashelf/nvf";
+    };
+
     # nur - nix user repository
     nur = {
       url = "github:nix-community/NUR";
@@ -78,7 +83,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, ... } @ inputs:
+  outputs = { self, nixpkgs,nvf, ... } @ inputs:
     let
       user = "toadsage";
       system = "x86_64-linux";
