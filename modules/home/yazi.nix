@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }:
+{ inputs, ... }:
 {
   programs.yazi = {
     enable = true;
@@ -26,4 +26,3 @@
     require("full-border"):setup()
   '';
 }
-

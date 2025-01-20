@@ -20,9 +20,8 @@
     swww_transition_type = any
     swww_transition_step = 90
     swww_transition_angle = 0
-    swww_transition_duration = 2
+    swww_transition_duration = 1
     swww_transition_fps = 60
     use_xdg_state = False
   '';
 }
-

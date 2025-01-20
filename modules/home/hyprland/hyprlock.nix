@@ -1,7 +1,4 @@
 { pkgs, host, ... }:
-let
-  text = "rgb(251, 241, 199)";
-in
 {
   home.packages = [ pkgs.hyprlock ];
   xdg.configFile."hypr/hyprlock.conf".text = ''
@@ -28,7 +25,7 @@ in
 
     # Time
     label {
-      monitor = 
+      monitor =
       text = cmd[update:1000] echo "$(date +"%k:%M")"
       color = rgba(235, 219, 178, .9)
       font_size = 115

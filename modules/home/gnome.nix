@@ -4,6 +4,7 @@
     with pkgs;
     [
       file-roller # archive
+      evince # pdf
     ]
   );
 
@@ -24,4 +25,3 @@
     };
   };
 }
-

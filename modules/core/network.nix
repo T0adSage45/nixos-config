@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 {
   networking = {
     hostName = "myoboku";
@@ -24,5 +24,5 @@
     };
   };
 
- # environment.systemPackages = with pkgs; [ networkmanagerapplet ];
+  # environment.systemPackages = with pkgs; [ networkmanagerapplet ];
 }

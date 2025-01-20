@@ -24,7 +24,7 @@
       font: "JetBrainsMono NF Bold 15";
       show-icons: true;
       icon-theme: "Papirus-dark";
-      terminal: "ghostty";
+      terminal: "alacritty";
       drun-display-format: "{icon} {name}";
       location: 0;
       disable-history: true;
@@ -101,7 +101,7 @@
     }
 
     element-icon {
-      size: 28px;
+      size: 24px;
     }
 
     element selected {
@@ -118,7 +118,7 @@
       padding: 10px;
       background-color: @bg-col-light;
       text-color: @grey;
-      vertical-align: 0.5; 
+      vertical-align: 0.5;
       horizontal-align: 0.5;
     }
 

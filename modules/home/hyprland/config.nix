@@ -32,8 +32,8 @@
         "$mainMod" = "MOD1";
         layout = "dwindle";
         gaps_in = 2;
-        gaps_out = 4;
-        border_size = 4;
+        gaps_out = 2;
+        border_size = 2;
         "col.active_border" = "rgb(98971A) rgb(CC241D) 45deg";
         "col.inactive_border" = "0x00000000";
         border_part_of_window = true;
@@ -70,9 +70,9 @@
 
       decoration = {
         rounding = 4;
-         active_opacity = 0.93;
-         inactive_opacity = 0.70;
-         fullscreen_opacity = 1.0;
+        active_opacity = 0.93;
+        inactive_opacity = 0.70;
+        fullscreen_opacity = 1.0;
 
         blur = {
           enabled = false;
@@ -96,40 +96,39 @@
           color = "rgba(00000055)";
         };
       };
-            animations = {
-                enabled = false;
-            };
+      animations = {
+        enabled = false;
+      };
 
-
-            #      animations = {
-            #        enabled = false;
-            #
-            #        bezier = [
-            #          "fluent_decel, 0, 0.2, 0.4, 1"
-            #          "easeOutCirc, 0, 0.55, 0.45, 1"
-            #          "easeOutCubic, 0.33, 1, 0.68, 1
-            #          "fade_curve, 0, 0.55, 0.45, 1"
-            #        ];
-            #
-            #        animation = [
-            #          # name, enable, speed, curve, style
-            #
-            #          # Windows
-            #          "windowsIn,   0, 4, easeOutCubic,  popin 20%" # window open
-            #          "windowsOut,  0, 4, fluent_decel,  popin 80%" # window close.
-            #          "windowsMove, 1, 2, fluent_decel, slide" # everything in between, moving, dragging, resizing.
-            #
-            #          # Fade
-            #          "fadeIn,      1, 3,   fade_curve" # fade in (open) -> layers and windows
-            #          "fadeOut,     1, 3,   fade_curve" # fade out (close) -> layers and windows
-            #          "fadeSwitch,  0, 1,   easeOutCirc" # fade on changing activewindow and its opacity
-            #          "fadeShadow,  1, 10,  easeOutCirc" # fade on changing activewindow for shadows
-            #          "fadeDim,     1, 4,   fluent_decel" # the easing of the dimming of inactive windows
-            #          # "border,      1, 2.7, easeOutCirc"  # for animating the border's color switch speed
-            #          # "borderangle, 1, 30,  fluent_decel, once" # for animating the border's gradient angle - styles: once (default), loop
-            #          "workspaces,  1, 4,   easeOutCubic, fade" # styles: slide, slidevert, fade, slidefade, slidefadevert
-            #        ];
-            #      };
+      #      animations = {
+      #        enabled = false;
+      #
+      #        bezier = [
+      #          "fluent_decel, 0, 0.2, 0.4, 1"
+      #          "easeOutCirc, 0, 0.55, 0.45, 1"
+      #          "easeOutCubic, 0.33, 1, 0.68, 1
+      #          "fade_curve, 0, 0.55, 0.45, 1"
+      #        ];
+      #
+      #        animation = [
+      #          # name, enable, speed, curve, style
+      #
+      #          # Windows
+      #          "windowsIn,   0, 4, easeOutCubic,  popin 20%" # window open
+      #          "windowsOut,  0, 4, fluent_decel,  popin 80%" # window close.
+      #          "windowsMove, 1, 2, fluent_decel, slide" # everything in between, moving, dragging, resizing.
+      #
+      #          # Fade
+      #          "fadeIn,      1, 3,   fade_curve" # fade in (open) -> layers and windows
+      #          "fadeOut,     1, 3,   fade_curve" # fade out (close) -> layers and windows
+      #          "fadeSwitch,  0, 1,   easeOutCirc" # fade on changing activewindow and its opacity
+      #          "fadeShadow,  1, 10,  easeOutCirc" # fade on changing activewindow for shadows
+      #          "fadeDim,     1, 4,   fluent_decel" # the easing of the dimming of inactive windows
+      #          # "border,      1, 2.7, easeOutCirc"  # for animating the border's color switch speed
+      #          # "borderangle, 1, 30,  fluent_decel, once" # for animating the border's gradient angle - styles: once (default), loop
+      #          "workspaces,  1, 4,   easeOutCubic, fade" # styles: slide, slidevert, fade, slidefade, slidefadevert
+      #        ];
+      #      };
 
       bind = [
         # show keybinds list
@@ -151,7 +150,7 @@
         "$mainMod, E, exec, nemo"
         "$mainMod SHIFT, E, exec, hyprctl dispatch exec '[float; size 1111 700] alacritty -e yazi'"
         "$mainMod SHIFT, W,exec, hyprctl dispatch exec '[float; size 925 615] waypaper'"
-	    "$mainMod CTRL, R , exec , random-wallpaper"
+        "$mainMod CTRL, R , exec , random-wallpaper"
 
         # "$mainMod SHIFT, W, exec, vm-start"
 
@@ -193,7 +192,7 @@
         "$mainMod SHIFT, 8, movetoworkspacesilent, 8"
         "$mainMod SHIFT, 9, movetoworkspacesilent, 9"
         "$mainMod SHIFT, 0, movetoworkspacesilent, 10"
-	 "$mainMod SHIFT, h, movewindow, l"
+        "$mainMod SHIFT, h, movewindow, l"
         "$mainMod SHIFT, j, movewindow, d"
         "$mainMod SHIFT, k, movewindow, u"
         "$mainMod SHIFT, l, movewindow, r"
@@ -231,19 +230,19 @@
       ];
 
       # # binds active in lockscreen
-       bindl = [
-      #   # laptop brigthness
-         ",XF86MonBrightnessUp, exec, brightnessctl set 5%+"
-         ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
-         "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
-         "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
-       ];
+      bindl = [
+        #   # laptop brigthness
+        ",XF86MonBrightnessUp, exec, brightnessctl set 5%+"
+        ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
+        "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
+        "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
+      ];
 
       # # binds that repeat when held
-       binde = [
-         ",XF86AudioRaiseVolume,exec, pamixer -i 2"
-         ",XF86AudioLowerVolume,exec, pamixer -d 2"
-       ];
+      binde = [
+        ",XF86AudioRaiseVolume,exec, pamixer -i 2"
+        ",XF86AudioLowerVolume,exec, pamixer -d 2"
+      ];
 
       # mouse binding
       bindm = [

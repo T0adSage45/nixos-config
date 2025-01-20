@@ -1,17 +1,12 @@
 {
-  inputs,
-  nixpkgs,
-  self,
-  user,
-  host,
   ...
 }:
 {
   imports = [
     ./bootloader.nix
     ./hardware.nix
-    ./xserver.nix
     ./network.nix
+    ./nh.nix
     ./pipewire.nix
     ./program.nix
     ./security.nix
@@ -19,5 +14,6 @@
     ./system.nix
     ./user.nix
     ./wayland.nix
+    ./xserver.nix
   ];
 }

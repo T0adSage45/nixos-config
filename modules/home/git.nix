@@ -24,9 +24,13 @@
     };
   };
 
- # home.packages = [ pkgs.gh ]; # pkgs.git-lfs
+  home.packages = [ pkgs.gh ]; # pkgs.git-lfs
 
   programs.zsh.shellAliases = {
-       gs = "git status";
+    g = "lazygit";
+    gs = "git status";
+    ga = "git add";
+    gaa = "git add --all";
+    gp = "git push";
   };
 }

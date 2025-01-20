@@ -1,9 +1,7 @@
 {
-  inputs,
-  user,
-  host,
   ...
-}: {
+}:
+{
   imports = [
     ./alacritty.nix # terminal
     ./bat.nix # better cat command
@@ -23,7 +21,6 @@
     ./packages.nix # other packages
     ./rofi.nix # launcher
     ./scripts/scripts.nix
-    # ./waybar                          # status bar
     ./waypaper.nix # GUI wallpaper picker
     ./xdg-mimes.nix # xdg config
     ./yazi.nix # terminal file manager
