@@ -7,10 +7,10 @@
       url = "github:nixos/nixpkgs/nixos-unstable";
     };
 
-   # nvf- neovim config manager
-    nvf = {
-      url = "github:notashelf/nvf";
-    };
+    # nvf- neovim config manager
+    # nvf = {
+    #    url = "github:notashelf/nvf";
+    #   };
 
     # nur - nix user repository
     nur = {
@@ -45,10 +45,10 @@
     };
 
     # spotify-client
- #   spicetify-nix = {
-  #    url = "github:gerg-l/spicetify-nix";
-  #    inputs.nixpkgs.follows = "nixpkgs";
-  #  };
+    #   spicetify-nix = {
+    #    url = "github:gerg-l/spicetify-nix";
+    #    inputs.nixpkgs.follows = "nixpkgs";
+    #  };
 
     # magnifier for Wayland
     hyprmag = {
@@ -56,14 +56,14 @@
     };
 
     # flatpak manager for NixOS
-    nix-flatpak = {
-      url = "github:gmodena/nix-flatpak";
-    };
+    # nix-flatpak = {
+    #  url = "github:gmodena/nix-flatpak";
+    #};
 
     # zen browser
-  #  zen-browser = {
-  #    url = "github:0xc000022070/zen-browser-flake";
-  #  };
+    #  zen-browser = {
+    #    url = "github:0xc000022070/zen-browser-flake";
+    #  };
 
     # yazi file-manager plugins
     yazi-plugins = {
@@ -72,9 +72,9 @@
     };
 
     # ghostty
-   # ghostty = {
-   #   url = "github:ghostty-org/ghostty";
-   # };
+    # ghostty = {
+    #   url = "github:ghostty-org/ghostty";
+    # };
 
     # Home-Manager setup for configurations
     home-manager = {
@@ -83,28 +83,30 @@
     };
   };
 
-  outputs = { self, nixpkgs,nvf, ... } @ inputs:
-    let
-      user = "toadsage";
-      system = "x86_64-linux";
-      pkgs = import nixpkgs {
-        inherit system;
-        config = {
-          allowUnfree = true;
-        };
-      };
-    in
-    {
-      nixosConfigurations = {
-        laptop = nixpkgs.lib.nixosSystem {
-          inherit system;
-          specialArgs = {
-            host = "laptop";
-            inherit self inputs user;
-          };
-          modules = [ ./hosts/laptop ];
-        };
+  outputs = {
+    self,
+    nixpkgs,
+    #nvf,
+    ...
+  } @ inputs: let
+    user = "toadsage";
+    system = "x86_64-linux";
+    pkgs = import nixpkgs {
+      inherit system;
+      config = {
+        allowUnfree = true;
       };
     };
+  in {
+    nixosConfigurations = {
+      laptop = nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = {
+          host = "laptop";
+          inherit self inputs user;
+        };
+        modules = [./hosts/laptop];
+      };
+    };
+  };
 }
-
