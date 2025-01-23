@@ -4,12 +4,12 @@
     enable = true;
     settings = {
       window.padding = {
-        x = 10;
-        y = 10;
+        x = 5;
+        y = 5;
       };
       window.decorations = "none";
       font = {
-        size = 10;
+        size = 8;
       };
     };
   };
