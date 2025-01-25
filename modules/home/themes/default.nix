@@ -1,7 +1,8 @@
 { inputs, ... }:
 {
   imports = [
-    inputs.nix.colors.homeManagerModules.default
+    inputs.nix-colors.homeManagerModules.default
   ];
-  colorsScheme = inputs.nix-colorsSchemes.gruvbox-dark-medium;
+
+  colorScheme = inputs.nix-colors.colorSchemes.dracula;
 }
