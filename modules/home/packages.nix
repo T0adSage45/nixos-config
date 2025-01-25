@@ -63,6 +63,7 @@
       pavucontrol # pulseaudio volume controle (GUI)
       vlc
       zenity
+      xclip
 
       # Languages
       gcc

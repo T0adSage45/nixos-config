@@ -21,10 +21,10 @@
     ./packages.nix # other packages
     ./rofi.nix # launcher
     ./scripts/scripts.nix
+    ./themes
     ./waypaper.nix # GUI wallpaper picker
     ./xdg-mimes.nix # xdg config
     ./yazi.nix # terminal file manager
     ./zsh # shel
-    #    ./nvf.nix
   ];
 }

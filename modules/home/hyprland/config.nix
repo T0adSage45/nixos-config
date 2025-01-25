@@ -20,8 +20,8 @@
         kb_options = "grp:ctrl_caps_toggle";
         numlock_by_default = false;
         follow_mouse = 1;
-        float_switch_override_focus = 0;
-        mouse_refocus = 0;
+        float_switch_override_focus = 1;
+        mouse_refocus = 1;
         sensitivity = 1;
         touchpad = {
           natural_scroll = false;
@@ -133,7 +133,6 @@
       bind = [
         # show keybinds list
         "$mainMod, F1, exec, show-keybinds"
-
         # keybindings
         "$mainMod, Return, exec, alacritty"
         "$mainMod, B, exec, hyprctl dispatch exec '[workspace 1 silent] brave --incognito'"
@@ -148,7 +147,7 @@
         "$mainMod, S, togglesplit,"
         "$mainMod, T, exec, toggle_oppacity"
         "$mainMod, E, exec, nemo"
-        "$mainMod SHIFT, E, exec, hyprctl dispatch exec '[float; size 1111 700] alacritty -e yazi'"
+        "$mainMod SHIFT, E, exec, hyprctl dispatch exec '[float; size 1111 700] alacritty -e lf'"
         "$mainMod SHIFT, W,exec, hyprctl dispatch exec '[float; size 925 615] waypaper'"
         "$mainMod CTRL, R , exec , random-wallpaper"
 
@@ -225,8 +224,6 @@
         "$mainMod, mouse_down, workspace, e-1"
         "$mainMod, mouse_up, workspace, e+1"
 
-        # clipboard manager
-        "$mainMod, V, exec, cliphist list | rofi -dmenu -theme-str 'window {width: 50%;} listview {columns: 1;}' | cliphist decode | wl-copy"
       ];
 
       # # binds active in lockscreen

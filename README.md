@@ -11,6 +11,6 @@ Welcome to my NixOS configuration repository, where I blend the wisdom of the To
 
 ---
 
-![pics](assets/i.png)
+![pics](assets/kyomi.png)
 
 Feel free to tweak it to better match your preferences or add more details!

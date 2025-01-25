@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{... }:
 {
   services.pulseaudio.enable = false;
   services.pipewire = {
@@ -9,5 +9,5 @@
     jack.enable = true;
     # lowLatency.enable = true;
   };
- # environment.systemPackages = with pkgs; [ pulseaudioFull ];
+  # environment.systemPackages = with pkgs; [ pulseaudioFull ];
 }

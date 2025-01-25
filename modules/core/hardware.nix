@@ -2,14 +2,14 @@
 {
   hardware = {
     graphics = {
-      enable = true ;
+      enable = true;
       extraPackages = with pkgs; [
         intel-media-driver
-      #  (vaapiIntel.override { enableHybridCodec = true; })
-      #  vaapiVdpau
-      #  libvdpau-va-gl
+        #  (vaapiIntel.override { enableHybridCodec = true; })
+        #  vaapiVdpau
+        #  libvdpau-va-gl
       ];
     };
   };
-hardware.enableRedistributableFirmware = true;
+  hardware.enableRedistributableFirmware = true;
 }
