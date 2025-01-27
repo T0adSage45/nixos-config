@@ -1,18 +1,19 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   home.packages = (with pkgs; [ rofi-wayland ]);
 
   xdg.configFile."rofi/theme.rasi".text = ''
     * {
-      bg-col: #1D2021;
-      bg-col-light: #282828;
-      border-col: #A89984;
-      selected-col: #3C3836;
-      green: #98971A;
-      fg-col: #FBF1C7;
-      fg-col2: #EBDBB2;
-      grey: #BDAE93;
+     bg-col: #${config.colorScheme.palette.base00};
+      bg-col-light: #${config.colorScheme.palette.base01};
+      border-col: #${config.colorScheme.palette.base0A};
+      selected-col: #${config.colorScheme.palette.base02};
+      green: #${config.colorScheme.palette.base0B};
+      fg-col: #${config.colorScheme.palette.base02};
+      fg-col2: #${config.colorScheme.palette.base01};
+      grey: #${config.colorScheme.palette.base03};
       highlight: @green;
+
     }
   '';
 
@@ -21,7 +22,7 @@
       modi: "run,drun,window";
       lines: 5;
       cycle: false;
-      font: "JetBrainsMono NF Bold 15";
+      font: "JetBrainsMono NF Bold 10";
       show-icons: true;
       icon-theme: "Papirus-dark";
       terminal: "alacritty";
@@ -45,8 +46,8 @@
     }
 
     window {
-      height: 600px;
-      width: 900px;
+      height: 250px;
+      width: 400px;
       border: 2px;
       border-color: @border-col;
       background-color: @bg-col;
@@ -88,7 +89,7 @@
       border: 0px 0px 0px;
       padding: 6px 0px 0px;
       margin: 10px 0px 0px 6px;
-      columns: 3;
+      columns: 1;
       background-color: @bg-col;
       cycle: true;
     }
