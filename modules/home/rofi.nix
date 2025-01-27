@@ -6,7 +6,7 @@
     * {
      bg-col: #${config.colorScheme.palette.base00};
       bg-col-light: #${config.colorScheme.palette.base01};
-      border-col: #${config.colorScheme.palette.base0A};
+      border-col: #${config.colorScheme.palette.base0E};
       selected-col: #${config.colorScheme.palette.base02};
       green: #${config.colorScheme.palette.base0B};
       fg-col: #${config.colorScheme.palette.base02};
