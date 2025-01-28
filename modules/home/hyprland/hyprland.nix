@@ -20,7 +20,7 @@
     enable = true;
     xwayland = {
       enable = true;
-    #  hidpi = true;
+      #  hidpi = true;
     };
     # enableNvidiaPatches = false;
     systemd.enable = true;
