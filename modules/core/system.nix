@@ -25,6 +25,12 @@
   environment.systemPackages = with pkgs; [
     wget
     git
+    gcc
+    clang-tools
+    glibc
+    stdenv
+    gdb
+
   ];
 
   time.timeZone = "Asia/Tokyo";
