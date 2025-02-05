@@ -22,7 +22,7 @@
     ./rofi.nix # launcher
     ./scripts/scripts.nix
     ./themes
-    ./tmux
+    ./tmux.nix
     ./waypaper.nix # GUI wallpaper picker
     ./xdg-mimes.nix # xdg config
     ./yazi.nix # terminal file manager
