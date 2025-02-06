@@ -25,6 +25,7 @@
   environment.systemPackages = with pkgs; [
     wget
     git
+    cmake
     gcc
     neovim
     tmux

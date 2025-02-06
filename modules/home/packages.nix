@@ -67,6 +67,7 @@
 
       # Languages
       gcc
+      cmake
       clang-tools
       glibc
       stdenv
