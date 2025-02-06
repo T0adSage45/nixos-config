@@ -64,6 +64,7 @@
       vlc
       zenity
       xclip
+      lf
 
       # Languages
       gcc
@@ -84,7 +85,7 @@
       python3
       python312Packages.ipython
 
-      # inputs.alejandra.defaultPackage.${system}
+      inputs.alejandra.defaultPackage.${system}
     ]
   );
 }

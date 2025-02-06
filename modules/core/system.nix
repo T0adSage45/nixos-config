@@ -25,15 +25,6 @@
   environment.systemPackages = with pkgs; [
     wget
     git
-    cmake
-    gcc
-    neovim
-    tmux
-    clang
-    clang-tools
-    glibc
-    stdenv
-    gdb
   ];
 
   time.timeZone = "Asia/Tokyo";
