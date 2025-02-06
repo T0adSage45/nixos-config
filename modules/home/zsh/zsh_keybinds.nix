@@ -97,6 +97,8 @@
            zle -N my-backward-delete-word
            # bind this new widget to `ctrl+w`
            bindkey '^W' my-backward-delete-word
+           bindkey -s '\ef' 'tmux-sessionizer\n'
+
     '';
   };
 }

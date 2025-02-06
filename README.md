@@ -8,7 +8,8 @@ Welcome to my NixOS configuration repository, where I blend the wisdom of the To
 - **Alacritty**: A GPU-accelerated terminal emulator, fast and simple.
 - **Rofi**: A customizable application launcher and menu.
 - **Modular NixOS**: Easy-to-use and reusable configurations for different setups.
-
+- **Tmux**: terminal mutiplexer i use with Alacritty or tty  to enhanche productivity.
+- **Nvim**: the holy editor. with lazyvim.
 ---
 
 ![pics](assets/kyomi.png)

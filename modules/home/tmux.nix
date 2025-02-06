@@ -1,9 +1,7 @@
-{ pkgs, ... }:
+{ ... }:
 {
   programs.tmux = {
     enable = true;
-    plugins = with pkgs; [
-    ];
     extraConfig = ''
       set -g default-terminal "tmux-256color"
       set -s escape-time 0
@@ -25,10 +23,10 @@
       bind -r h select-pane -L
       bind -r l select-pane -R
 
-      bind -r D neww -c "#{pane_current_path}" "[[ -e TODO.md ]] && nvim TODO.md || nvim ~/personal/todo.md"
+      bind -r D neww -c "#{pane_current_path}" "[[ -e README.md ]] && nvim README.md || nvim ~/personal/todo.md"
 
       # forget the find window.  That is for chumps
-      bind-key -r f run-shell "tmux-sessionizer"
+      bind-key -r f run-shell "tmux neww tmux-sessionizer"
     '';
   };
 }
