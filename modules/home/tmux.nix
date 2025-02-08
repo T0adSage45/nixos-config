@@ -1,7 +1,11 @@
-{ ... }:
+{ pkgs, ... }:
 {
   programs.tmux = {
     enable = true;
+    shell = "${pkgs.zsh}/bin/zsh";
+    plugins = with pkgs; [
+      tmuxPlugins.gruvbox
+    ];
     extraConfig = ''
       set -g default-terminal "tmux-256color"
       set -s escape-time 0
@@ -12,6 +16,7 @@
       set -g status-style 'bg=#333333 fg=#5eacd3'
       set -g base-index 1
 
+      setw -g mode-keys vi
       set-window-option -g mode-keys vi
       bind -T copy-mode-vi v send-keys -X begin-selection
       bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel 'xclip -in -selection clipboard'
@@ -27,6 +32,8 @@
 
       # forget the find window.  That is for chumps
       bind-key -r f run-shell "tmux neww tmux-sessionizer"
+      bind-key -r g run-shell "tmux neww git-sessionizer"
+
     '';
   };
 }

@@ -98,6 +98,7 @@
            # bind this new widget to `ctrl+w`
            bindkey '^W' my-backward-delete-word
            bindkey -s '\ef' 'tmux-sessionizer\n'
+           bindkey -s '\eg' 'git-sessionizer\n'
 
     '';
   };

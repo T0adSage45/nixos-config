@@ -42,6 +42,10 @@ let
   tmux-sessionizer = pkgs.writeScriptBin "tmux-sessionizer" (
     builtins.readFile ./scripts/tmux-sessionizer.sh
   );
+  git-sessionizer = pkgs.writeScriptBin "git-sessionizer" (
+    builtins.readFile ./scripts/git-sessionizer.sh
+  );
+
 in
 {
   home.packages = with pkgs; [
@@ -77,5 +81,6 @@ in
     power-menu
 
     tmux-sessionizer
+    git-sessionizer
   ];
 }

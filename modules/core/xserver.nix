@@ -4,7 +4,7 @@
     xserver = {
       enable = true;
       xkb.layout = "us,jp";
-      xkb.options = "grp:super_caps_toggle";
+      xkb.options = "grp:win_caps_toggle";
     };
 
     displayManager.autoLogin = {
