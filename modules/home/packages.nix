@@ -81,6 +81,7 @@
       nodejs
       go
       cargo
+      rustc
 
       python3
       python312Packages.ipython
