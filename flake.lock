@@ -735,6 +735,22 @@
         "type": "github"
       }
     },
+    "nvim-conf": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1739138785,
+        "narHash": "sha256-O429fbjUxhWxaPTBIiCctNsfdXjxQU1DkpdxrTRHrO0=",
+        "owner": "T0adSage45",
+        "repo": "nvim",
+        "rev": "dd100aa942acef4b8baf2299405fdcc3e6d2850a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "T0adSage45",
+        "repo": "nvim",
+        "type": "github"
+      }
+    },
     "pre-commit-hooks": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -768,6 +784,7 @@
         "nix-colors": "nix-colors",
         "nixpkgs": "nixpkgs_5",
         "nur": "nur",
+        "nvim-conf": "nvim-conf",
         "yazi-plugins": "yazi-plugins",
         "zig": "zig"
       }

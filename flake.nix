@@ -41,6 +41,10 @@
     nix-colors = {
       url = "github:Misterio77/nix-colors";
     };
+    nvim-conf = {
+      url = "github:T0adSage45/nvim";
+      flake = false;
+    };
   };
 
   outputs =

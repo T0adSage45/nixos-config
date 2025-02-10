@@ -80,8 +80,7 @@
       luajit
       nodejs
       go
-      cargo
-      rustc
+      rustup
 
       python3
       python312Packages.ipython

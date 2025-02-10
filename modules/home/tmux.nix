@@ -5,6 +5,7 @@
     shell = "${pkgs.zsh}/bin/zsh";
     plugins = with pkgs; [
       tmuxPlugins.gruvbox
+      tmuxPlugins.vim-tmux-navigator
     ];
     extraConfig = ''
       set -g default-terminal "tmux-256color"
