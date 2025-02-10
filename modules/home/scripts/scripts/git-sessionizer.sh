@@ -50,7 +50,7 @@ if [[ "$CHOICE" == "y" || "$CHOICE" == "Y" || -z "$CHOICE" ]]; then
     echo "Repository cloned successfully!"
 
     # Set the selected directory to the cloned repository
-    selected="$HOME/$(echo "$SELECTED_REPO" | awk -F'/' '{print $2}')"
+    selected="$(pwd)/$(echo "$SELECTED_REPO" | awk -F'/' '{print $2}')"
 else
     echo "Not cloned."
     exit 0
