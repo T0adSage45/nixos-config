@@ -76,7 +76,9 @@
               user
               ;
           };
-          modules = [ ./hosts/laptop ];
+          modules = [
+            ./hosts/laptop
+          ];
         };
       };
     };

@@ -1,10 +1,6 @@
-{ inputs, ... }:
+{ ... }:
 {
   imports = [
-    inputs.nix-colors.homeManagerModules.default
+    ./nix-color.nix
   ];
-
-  #colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
-  colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
-
 }
