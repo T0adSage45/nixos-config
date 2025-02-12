@@ -80,4 +80,4 @@ if ! has_session "$selected_name"; then
 fi
 
 # Switch to the session
-switch_to "$selected_name"i
+switch_to "$selected_name"
