@@ -4,14 +4,14 @@
 
   xdg.configFile."rofi/theme.rasi".text = ''
        * {
-    bg-col: ${config.colorScheme.palette.base00};
-    bg-col-light: ${config.colorScheme.palette.base01};
-    border-col: ${config.colorScheme.palette.base0A};
-    selected-col: ${config.colorScheme.palette.base02};
-    green: ${config.colorScheme.palette.base0B};
-    fg-col: ${config.colorScheme.palette.base04};
-    fg-col2: ${config.colorScheme.palette.base05};
-    grey: ${config.colorScheme.palette.base05};
+    bg-col: #${config.colorScheme.palette.base00};
+    bg-col-light: #${config.colorScheme.palette.base01};
+    border-col: #${config.colorScheme.palette.base0A};
+    selected-col: #${config.colorScheme.palette.base02};
+    green: #${config.colorScheme.palette.base0B};
+    fg-col: #${config.colorScheme.palette.base04};
+    fg-col2: #${config.colorScheme.palette.base05};
+    grey: #${config.colorScheme.palette.base05};
     highlight: @green;
        }
   '';
