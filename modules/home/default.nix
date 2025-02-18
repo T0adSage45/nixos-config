@@ -24,6 +24,7 @@
     ./themes
     ./tmux.nix
     ./waypaper.nix # GUI wallpaper picker
+    ./waybar
     ./xdg-mimes.nix # xdg config
     ./yazi.nix # terminal file manager
     ./zsh # shell

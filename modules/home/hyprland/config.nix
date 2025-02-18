@@ -13,6 +13,7 @@
         "hyprctl setcursor bibata 20 &"
         "swww-daemon &"
         "hyprlock"
+        "waybar"
       ];
 
       input = {
@@ -135,7 +136,7 @@
         "$mainMod, F1, exec, show-keybinds"
         # keybindings
         "$mainMod, Return, exec, alacritty"
-        "$mainMod, B, exec, hyprctl dispatch exec '[workspace 1] brave --tor '"
+        "$mainMod, B, exec, hyprctl dispatch exec toggle_waybar"
         "$mainMod SHIFT, B, exec, hyprctl dispatch exec '[workspace 1] brave'"
         "$mainMod SHIFT, Q, killactive,"
         "$mainMod, F, fullscreen, 0"

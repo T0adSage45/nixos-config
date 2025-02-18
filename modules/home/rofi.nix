@@ -48,6 +48,7 @@
       height: 250px;
       width: 400px;
       border: 2px;
+      border-radius: 4px;
       border-color: @border-col;
       background-color: @bg-col;
     }
@@ -85,7 +86,7 @@
     }
 
     listview {
-      border: 0px 0px 0px;
+      border: 2px 0px 0px;
       padding: 6px 0px 0px;
       margin: 10px 0px 0px 6px;
       columns: 1;

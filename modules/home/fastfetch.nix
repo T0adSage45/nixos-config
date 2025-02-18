@@ -3,93 +3,121 @@
   home.packages = (with pkgs; [ fastfetch ]);
 
   xdg.configFile."fastfetch/config.jsonc".text = ''
-        {
-      "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-      "logo": {
-        "source": "~/nixos-config/assets/kyomi.png", // This will still be the Nix logo source for the main logo
-        "width": 30,
-        "height":15
-      },
-      "display": {
-        "separator": " |", // Separator
-        "color": "yellow"   // Text color
+            {
+          "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+          "logo": {
+            "source": "~/nixos-config/assets/kyomi.png", // This will still be the Nix logo source for the main logo
+            "height":20
+          },
+    "display": {
+        "separator": " : "
       },
       "modules": [
         {
-          "type": "title", // Title module
-          "color": {
-            "user": "green", // User name color
-            "at": "cyan",    // "@" symbol color
-            "host": "blue"   // Hostname color
-          }
-        },
-        "separator",
-        {
-          "type": "os", // OS info
-            "key": "", // Replace with Nix-related symbol (You can adjust this to a specific Nix symbol or ASCII art)
-          "keyColor": "cyan" // Cyan color for OS
+          "type": "custom",
+          "format": "\u001b[36m   󰄛  ガマセンニン"
         },
         {
-          "type": "uptime", // Uptime info
-          "key": "",
-          "keyColor": "green" // Green color for uptime
+          "type": "custom",
+          "format": "┌──────────────────────────────────────────┐"
         },
         {
-          "type": "shell", // Shell info
-          "key": "",
-          "keyColor": "magenta" // Magenta color for shell
+          "type": "chassis",
+          "key": "  󰇺 Chassis",
+          "format": "{3}"
         },
         {
-          "type": "wm", // Window manager info
-          "key": "",
-          "keyColor": "red" // Red color for window manager
+          "type": "os",
+          "key": " OS",
+          "format": "{2}",
+          "keyColor": "red"
         },
         {
-          "type": "terminal", // Terminal info
-          "key": "",
-          "keyColor": "yellow" // Yellow color for terminal
+          "type": "kernel",
+          "key": "   Kernel",
+          "format": "{2}",
+          "keyColor": "red"
         },
         {
-          "type": "cpu", // CPU info
-          "key": "",
-          "keyColor": "cyan" // Cyan color for CPU
+          "type": "packages",
+          "key": "  󰏗 Packages",
+          "keyColor": "green"
         },
         {
-          "type": "gpu", // GPU info
-          "key": "",
-          "keyColor": "yellow" // Yellow color for GPU
+          "type": "display",
+          "key": "  󰍹 Display",
+          "format": "{1}x{2} @ {3}Hz [{7}]",
+          "keyColor": "green"
         },
         {
-          "type": "memory", // Memory info
-          "key": "",
-          "keyColor": "green" // Green color for memory
+          "type": "terminal",
+          "key": "  >_ Terminal",
+          "keyColor": "yellow"
         },
         {
-          "type": "disk", // Disk info
-          "key": "",
-          "keyColor": "magenta",
-          "arguments": {
-            "mountpoint": "/" // Mount point for root disk
-          }
+          "type": "wm",
+          "key": "  󱗃 WM",
+          "format": "{2}",
+          "keyColor": "yellow"
         },
         {
-          "type": "disk", // Disk info for /home
-          "key": "",
-          "keyColor": "magenta",
-          "arguments": {
-            "mountpoint": "/home" // Mount point for home disk
-          }
-        },
-        {
-          "type": "battery", // Battery info
-          "key": "",
-          "keyColor": "yellow" // Yellow color for battery
+          "type": "custom",
+          "format": "└──────────────────────────────────────────┘"
         },
         "break",
         {
-          "type": "colors" // Color settings
+          "type": "title",
+          "key": "  ",
+          "format": "{6} {7} {8}"
+        },
+        {
+          "type": "custom",
+          "format": "┌──────────────────────────────────────────┐"
+        },
+        {
+          "type": "cpu",
+          "format": "{1} @ {7}",
+          "key": "   CPU",
+          "keyColor": "blue"
+        },
+        {
+          "type": "gpu",
+          "format": "{1} {2}",
+          "key": "  󰊴 GPU",
+          "keyColor": "blue"
+        },
+        {
+          "type": "gpu",
+          "format": "{3}",
+          "key": "   GPU Driver",
+          "keyColor": "magenta"
+        },
+        {
+          "type": "memory",
+          "key": "    Memory",
+          "keyColor": "magenta"
+        },
+        {
+          "type": "command",
+          "key": "  󱦟 OS Age ",
+          "keyColor": "red",
+          "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+        },
+        {
+          "type": "uptime",
+          "key": "  󱫐 Uptime ",
+          "keyColor": "red"
+        },
+        {
+          "type": "custom",
+          "format": "└──────────────────────────────────────────┘"
+        },
+        {
+          "type": "colors",
+          "paddingLeft": 2,
+          "symbol": "circle"
+        },
+        "break"      ]
         }
-      ]
-    }
   '';
 }
