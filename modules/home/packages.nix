@@ -6,6 +6,7 @@
 
       ## CLI utility
       ani-cli
+      manga-tui
       binsider
       bitwise # cli tool for bit / hex manipulation
       caligula # User-friendly, lightweight TUI for disk imaging
