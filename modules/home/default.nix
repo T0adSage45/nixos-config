@@ -7,6 +7,7 @@
     ./bat.nix # better cat command
     ./browser.nix # firefox based browser
     ./btop.nix
+    ./cava.nix
     ./fastfetch.nix # fetch tool
     ./fzf.nix # fuzzy finder
     ./git.nix # version control
@@ -14,6 +15,7 @@
     ./gtk.nix # gtk theme
     ./hyprland # window manager
     ./lazygit.nix
+    ./micro.nix
     ./nvim # neovim editor
     ./nemo.nix
     ./obsidian.nix

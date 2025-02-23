@@ -26,7 +26,6 @@
     extraGroups = [
       "networkmanager"
       "wheel"
-      "docker"
       "video"
       "audio"
     ];

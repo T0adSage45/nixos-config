@@ -38,6 +38,8 @@
       url = "github:mitchellh/zig-overlay";
     };
     # nvf- neovim config manager
+
+    nvf.url = "github:notashelf/nvf";
     nix-colors = {
       url = "github:Misterio77/nix-colors";
     };

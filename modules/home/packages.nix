@@ -69,18 +69,20 @@
 
       # Languages
       gcc
-      cmake
-      clang-tools
-      glibc
-      stdenv
       gdb
+      gnumake
+      cmake
+
       inputs.zig.packages.${system}.master
       zls
-      gnumake
+
       luarocks
       luajit
+
       nodejs
+
       go
+
       rustup
 
       python3
