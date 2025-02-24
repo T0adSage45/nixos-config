@@ -883,11 +883,11 @@
     "nvim-conf": {
       "flake": false,
       "locked": {
-        "lastModified": 1739138785,
-        "narHash": "sha256-O429fbjUxhWxaPTBIiCctNsfdXjxQU1DkpdxrTRHrO0=",
+        "lastModified": 1740383203,
+        "narHash": "sha256-WKfLawDXXg9z50MvfDm2uQGNQHC+jvxPbz/hbXrucl0=",
         "owner": "T0adSage45",
         "repo": "nvim",
-        "rev": "dd100aa942acef4b8baf2299405fdcc3e6d2850a",
+        "rev": "3c7b9caf99fe504606841dd91f3c46bb34347189",
         "type": "github"
       },
       "original": {
