@@ -135,6 +135,7 @@
         # show keybinds list
         "$mainMod, F1, exec, show-keybinds"
         # keybindings
+        "$mainMod SHIFT, Return, exec, kitty"
         "$mainMod, Return, exec, alacritty"
         "$mainMod, B, exec, hyprctl dispatch exec toggle_waybar"
         "$mainMod SHIFT, B, exec, hyprctl dispatch exec '[workspace 1] brave'"

@@ -16,7 +16,7 @@ let
     cyan = "#${config.colorScheme.palette.base0C}";
     orange_bright = "#${config.colorScheme.palette.base0F}";
     indicator_height = "2px";
-    opacity = "9.3";
+    opacity = "5.3";
   };
 in
 {
@@ -33,12 +33,11 @@ in
     }
 
     window#waybar {
-      background: #282828;
-      border-top: 1px solid #928374;
+      background: ${background_1};
+      border: 1px solid ${border_color};
     }
 
     tooltip {
-      background: ${background_1};
       border: 1px solid ${border_color};
     }
     tooltip label {

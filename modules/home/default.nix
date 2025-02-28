@@ -14,6 +14,7 @@
     ./gnome.nix # gnome apps
     ./gtk.nix # gtk theme
     ./hyprland # window manager
+    ./kitty.nix
     ./lazygit.nix
     ./micro.nix
     ./nvim # neovim editor
