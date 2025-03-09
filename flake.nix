@@ -34,9 +34,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     # zig
-    zig = {
-      url = "github:mitchellh/zig-overlay";
-    };
+    #   zig = {
+    # url = "github:mitchellh/zig-overlay";
+    # };
     # nvf- neovim config manager
 
     nvf.url = "github:notashelf/nvf";

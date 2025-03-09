@@ -73,7 +73,7 @@
       gnumake
       cmake
 
-      inputs.zig.packages.${system}.master
+      # inputs.zig.packages.${system}.master
       zls
 
       luarocks
