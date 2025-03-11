@@ -90,6 +90,10 @@
       python312Packages.ipython
 
       inputs.alejandra.defaultPackage.${system}
+
+      # API clients
+      bruno
+      postman
     ]
   );
 }
