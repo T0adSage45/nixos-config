@@ -48,6 +48,7 @@
       xdg-utils
       xxd
       telegram-desktop
+      showmethekey
 
       ## CLI
       cbonsai # terminal screensaver
