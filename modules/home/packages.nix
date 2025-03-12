@@ -94,6 +94,8 @@
       # API clients
       bruno
       postman
+
+      beekeeper-studio
     ]
   );
 }
