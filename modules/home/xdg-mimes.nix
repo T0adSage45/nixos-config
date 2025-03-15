@@ -3,7 +3,7 @@ with lib;
 let
   defaultApps = {
     browser = [ "brave.desktop" ];
-    text = [ "nvim.desktop" ];
+    text = [ "nvim" ];
     image = [ "imv-dir.desktop" ];
     audio = [ "mpv.desktop" ];
     video = [ "mpv.desktop" ];
