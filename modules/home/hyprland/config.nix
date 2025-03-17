@@ -13,12 +13,11 @@
         "hyprctl setcursor bibata 20 &"
         "swww-daemon &"
         "hyprlock"
-        "waybar"
       ];
 
       input = {
         kb_layout = "us,jp";
-        kb_options = "grp:ctrl_caps_toggle";
+        kb_options = "grp:alt_caps_toggle";
         numlock_by_default = false;
         follow_mouse = 1;
         float_switch_override_focus = 1;
@@ -38,7 +37,7 @@
         "col.active_border" =
           "rgb(${config.colorScheme.palette.base0A}) rgb(${config.colorScheme.palette.base08}) 45deg";
         "col.inactive_border" = "rgb(${config.colorScheme.palette.base01})";
-        border_part_of_window = true;
+        #border_part_of_window = true;
         no_border_on_floating = false;
       };
 
