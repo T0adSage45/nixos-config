@@ -7,7 +7,8 @@
       evince # pdf
     ]
   );
-  settings.dconf.settings = {
+
+  dconf.settings = {
     "org/gnome/TextEditor" = {
       custom-font = "Maple Mono 10";
       highlight-current-line = true;
