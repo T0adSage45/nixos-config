@@ -17,5 +17,3 @@ Welcome to my NixOS configuration repository, where I blend the wisdom of the To
 Feel free to tweak it to better match your preferences or add more details!
 
 ## Todo
-  - make tmux-sessionizer make the directory its using default
-  - go through with tmuxifier

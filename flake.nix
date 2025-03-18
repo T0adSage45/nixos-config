@@ -47,6 +47,9 @@
       url = "github:T0adSage45/nvim";
       flake = false;
     };
+    xremap = {
+      url = "github:xremap/nix-flake";
+    };
   };
 
   outputs =

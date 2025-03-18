@@ -16,8 +16,9 @@
       ];
 
       input = {
-        kb_layout = "us,jp";
-        kb_options = "grp:alt_caps_toggle";
+        kb_layout = "us,us,jp";
+        kb_variant = ",dvp,";
+        kb_options = "grp:alt_space_toggle";
         numlock_by_default = false;
         follow_mouse = 1;
         float_switch_override_focus = 1;

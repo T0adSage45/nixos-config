@@ -6,7 +6,7 @@
     shellAliases = {
       # Utils
       c = "clear";
-      n = "nvim .";
+      n = "nvim";
       cd = "z";
       tt = "gtrash put";
       cat = "bat";

@@ -15,10 +15,10 @@
   # colorScheme = inputs.nix-colors.colorSchemes.twilight;
   # colorScheme = inputs.nix-colors.colorSchemes.tokyo-city-dark;
   # colorScheme = inputs.nix-colors.colorSchemes.tender;
- # colorScheme = inputs.nix-colors.colorSchemes.tarot;
+  # colorScheme = inputs.nix-colors.colorSchemes.tarot;
   # colorScheme = inputs.nix-colors.colorSchemes.tango;
   # colorScheme = inputs.nix-colors.colorSchemes.summerfruit-dark;
-   colorScheme = inputs.nix-colors.colorSchemes.atelier-forest;
+  colorScheme = inputs.nix-colors.colorSchemes.atelier-forest;
   # colorScheme = inputs.nix-colors.colorSchemes.blueforest;
   # colorScheme = inputs.nix-colors.gruvbox-medium-dark;
 
