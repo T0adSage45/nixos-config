@@ -16,5 +16,6 @@
     ./virtualisation.nix
     ./wayland.nix
     ./xserver.nix
+    ./xremap.nix
   ];
 }
