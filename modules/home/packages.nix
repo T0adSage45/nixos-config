@@ -85,6 +85,7 @@
       go
 
       rustup
+      vscode
 
       python3
       python312Packages.ipython
