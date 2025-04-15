@@ -3,8 +3,8 @@
   services = {
     xserver = {
       enable = true;
-      xkb.layout = "us,us,jp";
-      xkb.variant = ",dvp,";
+      xkb.layout = "us,jp";
+      xkb.variant = ",";
       xkb.options = "grp:alt_space_toggle";
       videoDrivers = [ "nvidia" ];
     };
