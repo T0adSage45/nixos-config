@@ -3,7 +3,6 @@
   home.packages = (
     with pkgs;
     [
-
       ## CLI utility
       ani-cli
       manga-tui
@@ -96,7 +95,7 @@
       bruno
       postman
 
-      beekeeper-studio
+      #     beekeeper-studio
     ]
   );
 }
