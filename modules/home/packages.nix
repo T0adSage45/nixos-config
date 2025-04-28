@@ -1,101 +1,93 @@
 { inputs, pkgs, ... }:
+
 {
-  home.packages = (
-    with pkgs;
-    [
-      ## CLI utility
-      ani-cli
-      manga-tui
-      binsider
-      bitwise # cli tool for bit / hex manipulation
-      caligula # User-friendly, lightweight TUI for disk imaging
-      docfd # TUI multiline fuzzy document finder
-      eza # ls replacement
-      entr # perform action when file change
-      fd # find replacement
-      ffmpeg
-      file # Show file information
-      gtt # google translate TUI
-      gifsicle # gif utility
-      gtrash # rm replacement, put deleted files in system trash
-      hexdump
-      imv # image viewer
-      jq # JSON processor
-      killall
-      libnotify
-      man-pages # extra man pages
-      mimeo
-      mpv # video player
-      ncdu # disk space
-      nitch # systhem fetch util
-      nixd # nix lsp
-      nixfmt-rfc-style # nix formatter
-      openssl
-      onefetch # fetch utility for git repo
-      pamixer # pulseaudio command line mixer
-      playerctl # controller for media players
-      poweralertd
-      ripgrep # grep replacement
-      shfmt # bash formatter
-      swappy # snapshot editing tool
-      tdf # cli pdf viewer
-      treefmt2 # project formatter
-      tldr
-      unzip
-      valgrind # c memory analyzer
-      yt-dlp-light
-      xdg-utils
-      xxd
-      telegram-desktop
-      showmethekey
+  home.packages = with pkgs; [
 
-      ## CLI
-      cbonsai # terminal screensaver
-      cmatrix
-      pipes # terminal screensaver
-      sl
-      tty-clock # cli clock
+    ## --- 🛠️ Essential CLI Utilities ---
+    binsider # Basic CLI helper
+    bitwise # Bit/hex calculator
+    caligula # Lightweight TUI for disk imaging
+    docfd # Fuzzy document finder
+    eza # Modern ls replacement
+    entr # Run commands on file changes
+    fd # Simple find alternative
+    file # Inspect file types
+    gifsicle # GIF manipulation tool
+    gtrash # Safer file deletion
+    hexdump # Hex dump viewer
+    jq # JSON processor
+    killall # Kill processes by name
+    libnotify # Send desktop notifications
+    mimeo # Open files with default app
+    openssl # SSL/TLS toolkit
+    ripgrep # Fast grep replacement
+    shfmt # Shell script formatter
+    tldr # Simplified man pages
+    unzip # Unzip archives
+    xdg-utils # Basic desktop integration tools
+    xxd # Hex viewer/editor
+    swappy # Screenshot editing tool
+    poweralertd # Power event daemon
+    showmethekey # Show pressed keys on screen
 
-      ## GUI Apps
-      bleachbit # cache cleaner
-      gimp
-      nix-prefetch-github
-      obs-studio
-      pavucontrol # pulseaudio volume controle (GUI)
-      vlc
-      zenity
-      xclip
-      lf
+    ## --- 🎵 Media Utilities ---
+    ffmpeg # Multimedia framework
+    mpv # Media player
+    imv # Image viewer
+    yt-dlp-light # YouTube downloader
+    playerctl # Media player controller
+    pamixer # Audio volume control
+    pavucontrol # Audio settings GUI
+    vlc # Video player
+    gimp # Image editor
 
-      # Languages
-      gcc
-      gdb
-      gnumake
-      cmake
+    ## --- 🖥️ System Utilities ---
+    ncdu # Disk usage analyzer
+    nitch # System fetch tool
+    onefetch # Git repo info fetcher
+    treefmt2 # Project formatter
+    caligula # (listed again? double check needed 👀)
+    gtt # Google translate TUI
+    tdf # CLI PDF viewer
+    telegram-desktop # Messaging app
+    bleachbit # System cleaner
+    xclip # Clipboard manager
+    zenity # Simple dialogs
+    lf # Terminal file manager
 
-      # inputs.zig.packages.${system}.master
-      zls
+    ## --- 👩‍💻 Development Tools ---
+    gcc # C compiler
+    gdb # Debugger
+    gnumake # Build tool
+    cmake # Project build system
+    valgrind # Memory checker
+    nixd # Nix language server
+    nixfmt-rfc-style # Nix code formatter
+    inputs.alejandra.defaultPackage.${system} # Alejandra formatter
+    inputs.zig.packages.${system}.master # Zig compiler (master branch)
+    zls # Zig Language Server
+    rustup # Rust installer
+    go # Go programming language
+    nodejs # Node.js runtime
+    python3 # Python runtime
+    python312Packages.ipython # Interactive Python
+    luarocks # Lua package manager
+    luajit # High-performance Lua
+    vscode # Visual Studio Code editor
 
-      luarocks
-      luajit
+    ## --- 🌐 API / Networking Tools ---
+    bruno # API client
+    postman # API testing tool
+    # beekeeper-studio # (Commented out) Database client
 
-      nodejs
+    ## --- 🎉 Fun Terminal Apps ---
+    cbonsai # ASCII bonsai trees
+    cmatrix # Matrix rain
+    pipes # Terminal screensaver
+    sl # Steam locomotive fun
+    tty-clock # Terminal clock
 
-      go
-
-      rustup
-      vscode
-
-      python3
-      python312Packages.ipython
-
-      inputs.alejandra.defaultPackage.${system}
-
-      # API clients
-      bruno
-      postman
-
-      #     beekeeper-studio
-    ]
-  );
+    ## --- 🆕 New Addition ---
+    anki-bin # Flashcards
+  ];
 }
