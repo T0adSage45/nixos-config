@@ -18,6 +18,7 @@
       ];
     };
   };
+
   nixpkgs = {
     overlays = [ inputs.nur.overlays.default ];
   };
@@ -25,6 +26,8 @@
   environment.systemPackages = with pkgs; [
     wget
     git
+    fcitx5
+    fcitx5-mozc
   ];
 
   time.timeZone = "Asia/Tokyo";
@@ -44,4 +47,5 @@
 
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "24.05";
+
 }
