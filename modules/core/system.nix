@@ -26,8 +26,6 @@
   environment.systemPackages = with pkgs; [
     wget
     git
-    fcitx5
-    fcitx5-mozc
   ];
 
   time.timeZone = "Asia/Tokyo";
@@ -44,7 +42,6 @@
     LC_TELEPHONE = "ja_JP.UTF-8";
     LC_TIME = "ja_JP.UTF-8";
   };
-
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "24.05";
 
