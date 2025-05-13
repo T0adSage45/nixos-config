@@ -249,25 +249,25 @@
         "$mainMod, mouse:273, resizewindow"
       ];
 
-      # windowrule
-      windowrule = [
-        "float,imv"
-        "float,mpv"
-        "float,audacious"
-        "pin,rofi"
-        "pin,waypaper"
-        "tile, neovide"
-        "idleinhibit focus,mpv"
-        "float,udiskie"
-        "float,title:^(Transmission)$"
-        "float,title:^(Volume Control)$"
-        "float,title:^(brave — Sharing Indicator)$"
-        "move 0 0,title:^(brave — Sharing Indicator)$"
-        "size 700 450,title:^(Volume Control)$"
-        "move 40 55%,title:^(Volume Control)$"
-        "opacity 0.75 0.75, title:(.*)(alacritty)$"
-      ];
-
+      # # windowrule
+      # windowrule = [
+      #   "float,imv"
+      #   "float,mpv"
+      #   "float,audacious"
+      #   "pin,rofi"
+      #   "pin,waypaper"
+      #   "tile, neovide"
+      #   "idleinhibit focus,mpv"
+      #   "float,udiskie"
+      #   "float,title:^(Transmission)$"
+      #   "float,title:^(Volume Control)$"
+      #   "float,title:^(brave — Sharing Indicator)$"
+      #   "move 0 0,title:^(brave — Sharing Indicator)$"
+      #   "size 700 450,title:^(Volume Control)$"
+      #   "move 40 55%,title:^(Volume Control)$"
+      #   "opacity 0.75 0.75, title:(.*)(alacritty)$"
+      # ];
+      #
       # windowrulev2
       windowrulev2 = [
         "float, title:^(Picture-in-Picture)$"
@@ -277,7 +277,11 @@
         "opacity 1.0 override 1.0 override, title:^(.*imv.*)$"
         "opacity 1.0 override 1.0 override, title:^(.*mpv.*)$"
         "workspace 1, class:^(brave)$"
-        "idleinhibit focus, class:^(mpv)$"
+        "workspace 2, class:^(kitty)$"
+        "workspace 3, class:^(nemo)$"
+        "workspace 6, class:^(gimp)$"
+
+        # "idleinhibit focus, class:^(mpv)$"
         "idleinhibit fullscreen, class:^(brave)$"
         "float,class:^(waypaper)$"
         "float,class:^(zenity)$"
