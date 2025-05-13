@@ -3,9 +3,9 @@
   services = {
     xserver = {
       enable = true;
-      xkb.layout = "us,jp";
-      xkb.variant = ",";
-      xkb.options = "grp:alt_space_toggle";
+      xkb.layout = "us";
+      xkb.variant = "";
+      xkb.options = "grp:ctrl_space_toggle";
       videoDrivers = [ "nvidia" ];
     };
 

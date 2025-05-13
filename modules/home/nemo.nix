@@ -24,7 +24,7 @@
     "org/nemo/preferences/menu-config" = {
       background-menu-open-as-root = false;
       selection-menu-open-as-root = false;
-      selection-menu-open-in-terminal = false;
+      selection-menu-open-in-terminal = true;
       selection-menu-scripts = false;
     };
     "org/nemo/search" = {

@@ -28,7 +28,7 @@
         },
         {
           "type": "os",
-          "key": " OS",
+          "key": "  OS",
           "format": "{2}",
           "keyColor": "red"
         },

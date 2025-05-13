@@ -46,7 +46,6 @@
     nitch # System fetch tool
     onefetch # Git repo info fetcher
     treefmt2 # Project formatter
-    caligula # (listed again? double check needed 👀)
     gtt # Google translate TUI
     tdf # CLI PDF viewer
     telegram-desktop # Messaging app

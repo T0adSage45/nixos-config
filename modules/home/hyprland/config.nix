@@ -16,9 +16,9 @@
       ];
 
       input = {
-        kb_layout = "us,us,jp";
-        kb_variant = ",dvp,";
-        kb_options = "grp:alt_space_toggle";
+        kb_layout = "us";
+        kb_variant = "";
+        kb_options = "grp:ctrl_space_toggle";
         numlock_by_default = false;
         follow_mouse = 1;
         float_switch_override_focus = 1;
@@ -313,8 +313,8 @@
         "bordersize 2, floating:2, onworkspace:f[1]"
         "rounding 4, floating:2, onworkspace:f[1]"
 
-        # "maxsize 1111 700, floating: 1"
-        # "center, floating: 1"
+        "maxsize 1111 700, floating: 1"
+        "center, floating: 1"
         #
         #       # Remove context menu transparency in chromium based apps
         "opaque,class:^()$,title:^()$"
@@ -322,11 +322,11 @@
       ];
 
       # No gaps when only
-      #     workspace = [
-      #       "w[t1], gapsout:2, gapsin:2"
-      #       "w[tg1], gapsout:2, gapsin:2"
-      #       "f[1], gapsout:2, gapsin:2"
-      #     ];
+      workspace = [
+        "w[t1], gapsout:2, gapsin:2"
+        "w[tg1], gapsout:2, gapsin:2"
+        "f[1], gapsout:2, gapsin:2"
+      ];
     };
 
     extraConfig = "

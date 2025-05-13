@@ -32,7 +32,6 @@
     ga = "git add";
     gaa = "git add --all";
     gs = "git status";
-    gp = "git push";
     gb = "git branch";
     gm = "git merge";
     gd = "git diff";
