@@ -284,7 +284,7 @@
         "workspace 5, class:^(Audacious)$"
         "workspace 5, class:^(Spotify)$"
         "workspace 7, class:^(com.obsproject.Studio)$"
-        "workspace 8, class:^(telegram)$"
+        "workspace 8, class:^(obsidian)$"
         "workspace 10, class:^(WebCord)$"
         "idleinhibit focus, class:^(mpv)$"
         "idleinhibit fullscreen, class:^(firefox)$"
