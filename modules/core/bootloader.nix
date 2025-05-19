@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ pkgs, ... }:
 
 {
   boot = {
@@ -10,7 +10,7 @@
       enable = true;
       theme = "spinner-monochrome"; # Must match theme folder name
       themePackages = [
-        (pkgs.plymouth-spinner-monochrome.override { inherit (config.boot.plymouth) logo; })
+        (pkgs.callPackage ./../../pkgs/plymouth-spinner-monochrome { })
       ];
     };
 
@@ -29,6 +29,7 @@
       "quiet" # Hide kernel messages
       "loglevel=3" # Reduce systemd/kernel log noise
       "systemd.show_status=auto" # Only show important boot events
+      "udev.log_level=3"
       "rd.udev.log_level=3"
       "vt.global_cursor_default=0" # Hide blinking cursor
     ];
