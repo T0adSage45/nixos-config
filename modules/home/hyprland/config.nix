@@ -284,7 +284,7 @@
         "workspace 5, class:^(Audacious)$"
         "workspace 5, class:^(Spotify)$"
         "workspace 7, class:^(com.obsproject.Studio)$"
-        "workspace 8, class:^(obsidian)$"
+        "workspace 8, class:^(telegram)$"
         "workspace 10, class:^(WebCord)$"
         "idleinhibit focus, class:^(mpv)$"
         "idleinhibit fullscreen, class:^(firefox)$"
@@ -317,12 +317,12 @@
         "noblur,class:^(xwaylandvideobridge)$"
 
         # No gaps when only
-        "bordersize 0, floating:0, onworkspace:w[t1]"
-        "rounding 0, floating:0, onworkspace:w[t1]"
-        "bordersize 0, floating:0, onworkspace:w[tg1]"
-        "rounding 0, floating:0, onworkspace:w[tg1]"
-        "bordersize 0, floating:0, onworkspace:f[1]"
-        "rounding 0, floating:0, onworkspace:f[1]"
+        "bordersize 2, floating:0, onworkspace:w[t1]"
+        "rounding 2, floating:0, onworkspace:w[t1]"
+        "bordersize 2, floating:0, onworkspace:w[tg1]"
+        "rounding 2, floating:0, onworkspace:w[tg1]"
+        "bordersize 2, floating:0, onworkspace:f[1]"
+        "rounding 2, floating:0, onworkspace:f[1]"
 
         # "maxsize 1111 700, floating: 1"
         # "center, floating: 1"

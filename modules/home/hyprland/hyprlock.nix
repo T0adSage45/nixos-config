@@ -70,7 +70,7 @@
       monitor =
       text =   $USER
       color = rgba(235, 219, 178, 1)
-      font_size = 15
+      font_size = 14
       font_family = Maple Mono Bold
       position = 0, ${if (host == "laptop") then "131" else "281"}
       halign = center
@@ -90,7 +90,7 @@
       inner_color = rgba(102, 92, 84, .33)
       color = rgba(235, 219, 178, .9)
       font_color = rgba(235, 219, 178, .9)
-      font_size = 14
+      font_size = 12
       font_family = Maple Mono Bold
       fade_on_empty = false
       placeholder_text = <i><span foreground="##fbf1c7">Enter Password</span></i>
