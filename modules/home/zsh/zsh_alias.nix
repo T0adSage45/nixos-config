@@ -1,5 +1,4 @@
-{
-  ...
+{ ...
 }:
 {
   programs.zsh = {
@@ -11,6 +10,9 @@
       tt = "gtrash put";
       cat = "bat";
       nano = "micro";
+      ta = "tmux attach";
+      tks = "tmux kill-server";
+      tkw = "tmux kill-window";
       code = "code";
       diff = "delta --diff-so-fancy --side-by-side";
       less = "bat";

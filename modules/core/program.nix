@@ -2,8 +2,7 @@
 {
   programs = {
 
-    noisetorch.enable = true;
-
+    # noisetorch.enable = true;
     dconf.enable = true;
     zsh.enable = true;
     gnupg.agent = {

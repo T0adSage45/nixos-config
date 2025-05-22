@@ -3,13 +3,13 @@ with lib;
 let
   defaultApps = {
     browser = [ "brave" ];
-    text = [ "neovim" ];
+    text = [ "nvim" ];
     image = [ "imv-dir.desktop" ];
     audio = [ "mpv.desktop" ];
     video = [ "mpv.desktop" ];
     directory = [ "nemo.desktop" ];
     pdf = [ "org.gnome.Evince.desktop" ];
-    terminal = [ "alacritty.desktop" ];
+    terminal = [ "kitty" ];
     archive = [ "org.gnome.FileRoller.desktop" ];
   };
 
