@@ -2,7 +2,7 @@
 {
   boot = {
 
-    binfmt.emulatedSystems = [ "aarch64-linux" ];
+    # binfmt.emulatedSystems = [ "aarch64-linux" ];
 
     plymouth = {
       enable = true;
