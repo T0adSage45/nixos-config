@@ -2,7 +2,7 @@
 let
   custom = {
     font = "Maple Mono";
-    font_size = "10px";
+    font_size = "9px";
     font_weight = "bold";
     text_color = "#${config.colorScheme.palette.base05}";
     background_0 = "#${config.colorScheme.palette.base00}";

@@ -9,7 +9,7 @@
       };
       window.decorations = "none";
       font = {
-        size = 10;
+        size = 9;
       };
       colors = {
         primary = {

@@ -10,7 +10,7 @@
 
   dconf.settings = {
     # "org/gnome/TextEditor" = {
-    #   custom-font = "Maple Mono 10";
+    #   custom-font = "Maple Mono 9";
     #   highlight-current-line = true;
     #   indent-style = "space";
     #   restore-session = false;
