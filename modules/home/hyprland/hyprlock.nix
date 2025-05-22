@@ -90,7 +90,7 @@
       inner_color = rgba(102, 92, 84, .33)
       color = rgba(235, 219, 178, .9)
       font_color = rgba(235, 219, 178, .9)
-      font_size = 8
+      font_size = 10
       font_family = Maple Mono Bold
       fade_on_empty = false
       placeholder_text = <i><span foreground="##fbf1c7">Enter Password</span></i>

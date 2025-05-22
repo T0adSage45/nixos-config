@@ -2,7 +2,7 @@
 let
   custom = {
     font = "Maple Mono";
-    font_size = "8px";
+    font_size = "10px";
     font_weight = "bold";
     text_color = "#${config.colorScheme.palette.base05}";
     background_0 = "#${config.colorScheme.palette.base00}";
@@ -96,7 +96,7 @@ in
     }
 
     #custom-launcher {
-      font-size: ${font-size};
+      font-size: ${font_size};
       color: ${text_color};
       font-weight: bold;
       margin-left: 3px;
