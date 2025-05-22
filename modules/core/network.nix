@@ -2,10 +2,7 @@
 {
   networking = {
     hostName = "myoboku";
-    networkmanager = {
-      enable = true;
-      wifi.powersave = false;
-    };
+    networkmanager.enable = true;
     nameservers = [
       "8.8.8.8"
       "8.8.4.4"
@@ -26,4 +23,6 @@
       ];
     };
   };
+
+  # environment.systemPackages = with pkgs; [ networkmanagerapplet ];
 }
