@@ -1,17 +1,23 @@
 { pkgs, ... }:
 {
-  programs.dconf.enable = true;
-  programs.zsh.enable = true;
-  programs.gnupg.agent = {
-    enable = true;
-    enableSSHSupport = true;
-    # pinentryFlavor = "";
+  programs = {
+
+    noisetorch.enable = true;
+
+    dconf.enable = true;
+    zsh.enable = true;
+    gnupg.agent = {
+      enable = true;
+      enableSSHSupport = true;
+    };
+    nix-ld = {
+      enable = true;
+      libraries = with pkgs; [
+        stdenv.cc.cc
+        zlib
+        curl
+        openssl
+      ];
+    };
   };
-  programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = with pkgs; [
-    stdenv.cc.cc
-    zlib
-    curl
-    openssl
-  ];
 }

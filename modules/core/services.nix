@@ -1,22 +1,72 @@
-{ pkgs, ... }:
+{ pkgs, user, ... }:
 {
   services = {
+
     gvfs.enable = true;
+
     gnome = {
       tinysparql.enable = true;
       gnome-keyring.enable = true;
     };
-    dbus.enable = true;
+
+    dbus = {
+      enable = true;
+      packages = with pkgs; [
+        gcr
+        gnome-settings-daemon
+      ];
+    };
+
     fstrim.enable = true;
 
-    # needed for GNOME services outside of GNOME Desktop
-    dbus.packages = with pkgs; [
-      gcr
-      gnome-settings-daemon
-    ];
+    logind = {
+      extraConfig = "HandlePowerKey=ignore";
+      lidSwitch = "suspend";
+      lidSwitchExternalPower = "suspend";
+    };
+
+    pulseaudio.enable = false;
+
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      alsa.support32Bit = true;
+      pulse.enable = true;
+      jack.enable = true;
+    };
+
+    # xrdp = {
+    #   enable = true;
+    #   openFirewall = true;
+    #   defaultWindowManager = "awesome";
+    #   audio.enable = true;
+    # };
+    #
+    # syncthing = {
+    #   enable = true;
+    #   user = "toadsage";
+    #   dataDir = "/home/toadsage/";
+    #   openDefaultPorts = true;
+    # };
+    #
+    xserver = {
+      enable = true;
+      xkb = {
+        layout = "us";
+        variant = "";
+      };
+      videoDrivers = [ "nvidia" ];
+    };
+
+    displayManager.autoLogin = {
+      enable = true;
+      user = "${user}";
+    };
+
+    libinput = {
+      enable = true;
+      touchpad.naturalScrolling = true;
+    };
   };
-  services.logind.extraConfig = ''
-    # don’t shutdown when power button is short-pressed
-    HandlePowerKey=ignore
-  '';
+
 }

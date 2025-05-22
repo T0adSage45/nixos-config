@@ -28,6 +28,8 @@
       "wheel"
       "video"
       "audio"
+      "libvirtd"
+      "docker"
     ];
     shell = pkgs.zsh;
   };

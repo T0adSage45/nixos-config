@@ -88,5 +88,6 @@
 
     ## --- 🆕 New Addition ---
     anki-bin # Flashcards
+    home-manager
   ];
 }

@@ -49,6 +49,7 @@
       # PCIE_ASPM_ON_AC = "default";
       # PCIE_ASPM_ON_BAT = "powersupersave";
     };
+
   };
 
   powerManagement.cpuFreqGovernor = "performance";
