@@ -5,7 +5,7 @@
     settings = {
       window_padding_width = 5;
       hide_window_decorations = "yes";
-      font_size = 12;
+      font_size = 8;
 
       # Transparency
       background_opacity = 0.90;
