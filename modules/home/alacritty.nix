@@ -3,13 +3,20 @@
   programs.alacritty = {
     enable = true;
     settings = {
-      window.padding = {
-        x = 5;
-        y = 5;
+      window = {
+        decorations = "none";
+        padding = {
+          x = 5;
+          y = 5;
+        };
       };
-      window.decorations = "none";
+      live_config_reload = true;
       font = {
         size = 9;
+        normal.family = "JetBrainsMono Nerd Font";
+        bold.family = "JetBrainsMono Nerd Font";
+        italic.family = "JetBrainsMono Nerd Font";
+        bold_italic.family = "JetBrainsMono Nerd Font";
       };
       colors = {
         primary = {
@@ -35,6 +42,18 @@
           magenta = "#${config.colorScheme.palette.base0E}"; # base0E
           cyan = "#${config.colorScheme.palette.base0C}"; # base0C
           white = "#${config.colorScheme.palette.base07}"; # base07
+        };
+        cursor = {
+          cursor = "#${config.colorScheme.palette.base0B}";
+          text = "CellForeground";
+        };
+        selection = {
+          text = "CellForeground";
+          background = "#${config.colorScheme.palette.base0B}";
+        };
+        vi_mode_cursor = {
+          text = "CellBackground";
+          cursor = "CellForeground";
         };
       };
     };

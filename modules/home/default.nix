@@ -1,5 +1,4 @@
-{
-  ...
+{ ...
 }:
 {
   imports = [
@@ -14,6 +13,7 @@
     ./gnome.nix # gnome apps
     ./gtk.nix # gtk theme
     ./hyprland # window manager
+    ./helix
     ./kitty.nix
     ./lazygit.nix
     ./micro.nix

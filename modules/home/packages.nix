@@ -73,6 +73,8 @@
     luarocks # Lua package manager
     luajit # High-performance Lua
     vscode # Visual Studio Code editor
+    bun
+    nixpkgs-fmt
 
     ## --- 🌐 API / Networking Tools ---
     bruno # API client
@@ -89,5 +91,17 @@
     ## --- 🆕 New Addition ---
     anki-bin # Flashcards
     home-manager
+    barrier
+
+    lsd
+    ranger
+    portal
+    bore-cli
+    pciutils
+    dig
+    atac
+    termshark
+    solc
+    nvtopPackages.full
   ];
 }
