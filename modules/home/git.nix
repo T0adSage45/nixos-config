@@ -11,8 +11,6 @@
       credential.helper = "store";
       merge.conflictstyle = "diff3";
       diff.colorMoved = "default";
-      commit.gpgSign = true;
-      gpg.format = "ssh";
     };
 
     delta = {

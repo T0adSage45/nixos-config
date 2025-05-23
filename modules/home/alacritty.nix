@@ -10,7 +10,6 @@
           y = 5;
         };
       };
-      live_config_reload = true;
       font = {
         size = 9;
         normal.family = "JetBrainsMono Nerd Font";
