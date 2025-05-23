@@ -13,10 +13,4 @@
       "--disable-features=WebRtcAllowInputVolumeAdjustment"
     ];
   };
-  programs.floorp = {
-    enable = true;
-    profiles = {
-      settings = { };
-    };
-  };
 }
