@@ -13,7 +13,7 @@
     ./gnome.nix # gnome apps
     ./gtk.nix # gtk theme
     ./hyprland # window manager
-    ./helix
+    ./helix.nix
     ./kitty.nix
     ./lazygit.nix
     ./micro.nix
