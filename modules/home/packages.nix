@@ -103,5 +103,8 @@
     termshark
     solc
     nvtopPackages.full
+
+    wine
+    winetricks
   ];
 }
