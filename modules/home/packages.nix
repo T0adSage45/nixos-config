@@ -107,5 +107,6 @@
     wine
     winetricks
     lutris
+
   ];
 }

@@ -316,14 +316,14 @@
         "noblur,class:^(xwaylandvideobridge)$"
 
         # No gaps when only
-        "bordersize 2, floating:0, onworkspace:w[t1]"
-        "rounding 2, floating:0, onworkspace:w[t1]"
-        "bordersize 2, floating:0, onworkspace:w[tg1]"
-        "rounding 2, floating:0, onworkspace:w[tg1]"
-        "bordersize 2, floating:0, onworkspace:f[1]"
-        "rounding 2, floating:0, onworkspace:f[1]"
+        # "bordersize 2, floating:0, onworkspace:w[t1]"
+        # "rounding 2, floating:0, onworkspace:w[t1]"
+        # "bordersize 2, floating:0, onworkspace:w[tg1]"
+        # "rounding 2, floating:0, onworkspace:w[tg1]"
+        # "bordersize 2, floating:0, onworkspace:f[1]"
+        # "rounding 2, floating:0, onworkspace:f[1]"
 
-        # "maxsize 1111 700, floating: 1"
+        "maxsize 1111 700, floating: 2"
         # "center, floating: 1"
 
         # Remove context menu transparency in chromium based apps

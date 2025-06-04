@@ -8,6 +8,7 @@
     nerd-fonts.symbols-only
     twemoji-color-font
     noto-fonts-emoji
+    noto-fonts-cjk-sans
     fantasque-sans-mono
     #   maple-mono # Temp Fix
   ];
