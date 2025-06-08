@@ -21,7 +21,7 @@
       modi: "run,drun,window";
       lines: 5;
       cycle: false;
-      font: "JetBrainsMono NF Bold 9";
+      font: "JetBrainsMono NF Bold 10";
       show-icons: true;
       icon-theme: "Papirus-dark";
       terminal: "alacritty";

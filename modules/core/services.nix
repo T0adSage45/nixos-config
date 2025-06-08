@@ -56,6 +56,7 @@
         variant = "";
       };
       videoDrivers = [ "nvidia" ];
+      excludePackages = with pkgs; [ xterm ];
     };
 
     displayManager.autoLogin = {
