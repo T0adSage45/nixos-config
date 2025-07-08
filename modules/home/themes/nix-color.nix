@@ -24,39 +24,22 @@
   colorScheme = {
     name = "hollow-purple";
     palette = {
-      base00 = "#271C3A";
-      base01 = "#100323";
-      base02 = "#3E2D5C";
-      base03 = "#5D5766";
-      base04 = "#BEBCBF";
-      base05 = "#DEDCDF";
-      base06 = "#EDEAEF";
-      base07 = "#BBAADD";
-      base08 = "#A92258";
-      base09 = "#918889";
-      base0A = "#804ead";
-      base0B = "#C6914B";
-      base0C = "#7263AA";
-      base0D = "#8E7DC6";
-      base0E = "#953B9D";
-      base0F = "#59325C";
+      base00 = "#1B2A26";
+      base01 = "#355E3B";
+      base02 = "#79A86E";
+      base03 = "#C7D8A3";
+      base04 = "#2E474F";
+      base05 = "#3AAFA9";
+      base06 = "#7DE3C1";
+      base07 = "#E3FAF4";
+      base08 = "#3D2E24";
+      base09 = "#796C5D";
+      base0A = "#D4B58F";
+      base0B = "#F2DBA1";
+      base0C = "#6283C5";
+      base0D = "#2B3A62";
+      base0E = "#A4B0CC";
+      base0F = "#F9F9F9";
     };
   };
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
