@@ -90,23 +90,12 @@
 
     ## --- 🆕 New Addition ---
     anki-bin # Flashcards
-    home-manager
-    barrier
-
     lsd
     ranger
     portal
     bore-cli
     pciutils
     dig
-    atac
-    termshark
-    solc
     nvtopPackages.full
-
-    wine
-    winetricks
-    lutris
-
   ];
 }
