@@ -4,7 +4,7 @@
     inputs.nix-colors.homeManagerModules.default
   ];
 
-  colorScheme = inputs.nix-colors.colorSchemes.catppuccin-macchiato;
+  # colorScheme = inputs.nix-colors.colorSchemes.catppuccin-macchiato;
   # colorScheme = inputs.nix-colors.colorSchemes.woodland; ---
   # colorScheme = inputs.nix-colors.colorSchemes.zenbones; ---
   # colorScheme = inputs.nix-colors.colorSchemes.xcode-dusk; ----
@@ -18,7 +18,7 @@
   # colorScheme = inputs.nix-colors.colorSchemes.tarot;
   # colorScheme = inputs.nix-colors.colorSchemes.tango;
   # colorScheme = inputs.nix-colors.colorSchemes.summerfruit-dark;
-  # colorScheme = inputs.nix-colors.colorSchemes.atelier-forest;
+  colorScheme = inputs.nix-colors.colorSchemes.atelier-forest;
   # colorScheme = inputs.nix-colors.colorSchemes.blueforest;
   # colorScheme = inputs.nix-colors.gruvbox-medium-dark;
   # colorScheme = {

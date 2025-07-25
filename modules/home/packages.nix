@@ -39,7 +39,7 @@
     pamixer # Audio volume control
     pavucontrol # Audio settings GUI
     vlc # Video player
-    gimp # Image editor
+    gimp3 # Image editor
 
     ## --- 🖥️ System Utilities ---
     ncdu # Disk usage analyzer
@@ -97,5 +97,8 @@
     pciutils
     dig
     nvtopPackages.full
+
+    blender
+    godot
   ];
 }

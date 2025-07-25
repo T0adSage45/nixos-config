@@ -29,7 +29,7 @@
       };
 
       general = {
-        "$mainMod" = "MOD1";
+        "$mainMod" = "SUPER"; # MOD1
         layout = "dwindle";
         gaps_in = 2;
         gaps_out = 2;
