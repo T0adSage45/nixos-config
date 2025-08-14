@@ -31,6 +31,7 @@
       "libvirtd"
       "docker"
     ];
+    hashedPassword = "$6$jGBOuIc6wbQmjBgM$jlYWQu6EOSeWGgLBhuopGPUXXD1qlzOfed5r4RUuz8peS3x1V1gr8K84ypIaFtT4wqY6mFJNIxE0G/HxbDyup/";
     shell = pkgs.zsh;
   };
   nix.settings.allowed-users = [ "${user}" ];

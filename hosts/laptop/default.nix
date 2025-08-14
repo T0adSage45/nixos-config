@@ -13,6 +13,8 @@
     acpi
     brightnessctl
     btop
+    powertop
+    cpupower-gui
   ];
 
   services = {
@@ -36,8 +38,8 @@
       CPU_HWP_DYN_BOOST_ON_AC = 1;
       CPU_HWP_DYN_BOOST_ON_BAT = 1;
 
-      PLATFORM_PROFILE_ON_AC = "powersave";
-      PLATFORM_PROFILE_ON_BAT = "powersave";
+      PLATFORM_PROFILE_ON_AC = "performance";
+      PLATFORM_PROFILE_ON_BAT = "performance";
 
       INTEL_GPU_MIN_FREQ_ON_AC = 500;
       INTEL_GPU_MIN_FREQ_ON_BAT = 500;
