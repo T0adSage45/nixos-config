@@ -60,7 +60,10 @@
     }@inputs:
     let
       user = "toadsage";
-      system = "x86_64-linux";
+      system = [
+        "aarch64-linux"
+        "x86_64-linux"
+      ];
       pkgs = import nixpkgs {
         inherit system;
         config = {
@@ -75,6 +78,20 @@
           inherit system;
           specialArgs = {
             host = "laptop";
+            inherit
+              self
+              inputs
+              user
+              ;
+          };
+          modules = [
+            ./hosts/laptop
+          ];
+        };
+        server = nixpkgs.lib.nixosSystem {
+          inherit system;
+          specialArgs = {
+            host = "server";
             inherit
               self
               inputs
