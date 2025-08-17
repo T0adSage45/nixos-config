@@ -8,6 +8,7 @@
     ./network.nix
     ./nh.nix
     ./program.nix
+    ./pipewire.nix
     ./security.nix
     ./services.nix
     ./system.nix

@@ -39,7 +39,7 @@
     };
     # nvf- neovim config manager
 
-    nvf.url = "github:notashelf/nvf";
+    # nvf.url = "github:notashelf/nvf";
     nix-colors = {
       url = "github:Misterio77/nix-colors";
     };
@@ -49,6 +49,10 @@
     };
     xremap = {
       url = "github:xremap/nix-flake";
+    };
+    disko = {
+      url = "github:nix-community/disko";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
@@ -60,21 +64,17 @@
     }@inputs:
     let
       user = "toadsage";
-      system = [
-        "aarch64-linux"
-        "x86_64-linux"
-      ];
+      system = "x86_64-linux";
+
       pkgs = import nixpkgs {
         inherit system;
-        config = {
-          allowUnfree = true;
-        };
-        lib = nixpkgs.lib;
+        config.allowUnfree = true;
       };
+      lib = nixpkgs.lib;
     in
     {
       nixosConfigurations = {
-        laptop = nixpkgs.lib.nixosSystem {
+        laptop = lib.nixosSystem {
           inherit system;
           specialArgs = {
             host = "laptop";
@@ -85,10 +85,12 @@
               ;
           };
           modules = [
+            # inputs.disko.nixosModules.default
+            # (import ./hosts/laptop/disko.nix { device = "/dev/sda"; })
             ./hosts/laptop
           ];
         };
-        server = nixpkgs.lib.nixosSystem {
+        server = lib.nixosSystem {
           inherit system;
           specialArgs = {
             host = "server";
@@ -99,7 +101,9 @@
               ;
           };
           modules = [
-            ./hosts/laptop
+            # inputs.disko.nixosModules.default
+            # (import ./hosts/server/disko.nix { device = "/dev/sda"; })
+            ./hosts/server
           ];
         };
       };

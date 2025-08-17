@@ -6,7 +6,7 @@
 
     plymouth = {
       enable = true;
-      theme = "spinner";
+      theme = "breeze";
     };
 
     loader = {

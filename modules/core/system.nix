@@ -12,10 +12,6 @@
         "nix-command"
         "flakes"
       ];
-      substituters = [ "https://nix-gaming.cachix.org" ];
-      trusted-public-keys = [
-        "nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4="
-      ];
     };
   };
 
@@ -46,6 +42,7 @@
     };
     inputMethod = {
       enabled = "fcitx5";
+      type = "fcitx5";
       fcitx5.addons = with pkgs; [
         fcitx5-mozc # Japanese input engine
         fcitx5-gtk

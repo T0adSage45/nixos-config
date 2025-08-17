@@ -16,7 +16,7 @@
   gtk = {
     enable = true;
     font = {
-      name = "Maple Mono";
+      name = "fira-code";
       size = 9;
     };
     theme = {

@@ -11,6 +11,8 @@
       credential.helper = "store";
       merge.conflictstyle = "diff3";
       diff.colorMoved = "default";
+      pull.ff = "only";
+      color.ui = true;
     };
 
     delta = {
@@ -23,6 +25,15 @@
       };
     };
   };
+
+  xdg.configFile."git/.gitignore".text = ''
+    .vscode
+    node_modules/
+    .env
+    .env.local
+    .cache
+    .next
+  '';
 
   home.packages = [ pkgs.gh ]; # pkgs.git-lfs
 

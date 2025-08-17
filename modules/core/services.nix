@@ -25,16 +25,6 @@
       lidSwitchExternalPower = "suspend";
     };
 
-    pulseaudio.enable = false;
-
-    pipewire = {
-      enable = true;
-      alsa.enable = true;
-      alsa.support32Bit = true;
-      pulse.enable = true;
-      jack.enable = true;
-    };
-
     # xrdp = {
     #   enable = true;
     #   openFirewall = true;
@@ -48,7 +38,7 @@
     #   dataDir = "/home/toadsage/";
     #   openDefaultPorts = true;
     # };
-    #
+
     xserver = {
       enable = true;
       xkb = {

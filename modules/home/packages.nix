@@ -96,7 +96,6 @@
     bore-cli
     pciutils
     dig
-    nvtopPackages.full
 
     blender
     godot

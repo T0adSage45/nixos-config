@@ -9,9 +9,9 @@
     monitors = All
     wallpaper = ~/Pictures/wallpapers/others/1.jpg
     backend = swww
-    fill = fill
+    fit = fit
     sort = name
-    color = #ffffff
+    color = #F5C672
     subfolders = true
     show_hidden = False
     show_gifs_only = False

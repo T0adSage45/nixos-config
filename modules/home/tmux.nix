@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   programs.tmux = {
     enable = true;
@@ -14,7 +14,7 @@
       unbind C-b
       set-option -g prefix C-a
       bind-key C-a send-prefix
-      set -g status-style 'bg=#333333 fg=#5eacd3'
+      set -g status-style 'bg=#"${config.colorScheme.palette.base00}"'
       set -g base-index 1
 
       setw -g mode-keys vi
