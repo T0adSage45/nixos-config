@@ -86,7 +86,7 @@
           };
           modules = [
             # inputs.disko.nixosModules.default
-            # (import ./hosts/laptop/disko.nix { device = "/dev/sda"; })
+            # (import ./hosts/laptop/disko.nix { device = "/dev/sdb"; })
             ./hosts/laptop
           ];
         };
@@ -102,7 +102,7 @@
           };
           modules = [
             # inputs.disko.nixosModules.default
-            # (import ./hosts/server/disko.nix { device = "/dev/sda"; })
+            # (import ./hosts/server/disko.nix { device = "/dev/sdb"; })
             ./hosts/server
           ];
         };

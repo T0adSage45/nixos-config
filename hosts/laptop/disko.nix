@@ -33,30 +33,15 @@
           };
         };
 
-        # Btrfs Root Partition
+        # Btrfs Root Partition (no subvolumes)
         root = {
           size = "100%"; # Use remaining space
-          type = "8300"; # Linux filesystem type
+          type = "8300";
           content = {
-            type = "btrfs";
-            subvolumes = {
-              "/root" = {
-                mountOptions = [ "compress=zstd" ]; # Compression for better performance
-                mountpoint = "/"; # Root subvolume
-              };
-              "/persist" = {
-                mountOptions = [ "compress=zstd" ]; # Compression for persistent data
-                mountpoint = "/persist"; # Persistent subvolume
-              };
-              "/nix" = {
-                mountOptions = [
-                  "compress=zstd"
-                  "noatime"
-                  "noacl"
-                ]; # Optimize for Nix store
-                mountpoint = "/nix"; # Nix subvolume
-              };
-            };
+            type = "filesystem";
+            format = "btrfs";
+            mountpoint = "/";
+            mountOptions = [ "compress=zstd" ];
           };
         };
       };
