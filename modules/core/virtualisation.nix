@@ -26,13 +26,13 @@
       #   ovmf.packages = [ pkgs.OVMFFull.fd ];
       # };
     };
-    spiceUSBRedirection.enable = true;
+    # spiceUSBRedirection.enable = true;
   };
-  services.spice-vdagentd.enable = true;
+  # services.spice-vdagentd.enable = true;
 
-  virtualisation.docker.enable = true;
-  virtualisation.docker.rootless = {
-    enable = true;
-    setSocketVariable = true;
-  };
+  # virtualisation.docker.enable = true;
+  # virtualisation.docker.rootless = {
+  #   enable = true;
+  #   setSocketVariable = true;
+  # };
 }

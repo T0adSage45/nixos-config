@@ -14,7 +14,7 @@
       unbind C-b
       set-option -g prefix C-a
       bind-key C-a send-prefix
-      set -g status-style 'bg=#"${config.colorScheme.palette.base00}"'
+      set -g status-style 'bg=#${config.colorScheme.palette.base00}'
       set -g base-index 1
 
       setw -g mode-keys vi

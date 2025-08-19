@@ -28,7 +28,6 @@
     xxd # Hex viewer/editor
     swappy # Screenshot editing tool
     poweralertd # Power event daemon
-    showmethekey # Show pressed keys on screen
 
     ## --- 🎵 Media Utilities ---
     ffmpeg # Multimedia framework
@@ -39,7 +38,7 @@
     pamixer # Audio volume control
     pavucontrol # Audio settings GUI
     vlc # Video player
-    gimp3 # Image editor
+    # gimp3 # Image editor
 
     ## --- 🖥️ System Utilities ---
     ncdu # Disk usage analyzer
@@ -77,19 +76,19 @@
     nixpkgs-fmt
 
     ## --- 🌐 API / Networking Tools ---
-    bruno # API client
-    postman # API testing tool
+    # bruno # API client
+    # postman # API testing tool
     # beekeeper-studio # (Commented out) Database client
 
     ## --- 🎉 Fun Terminal Apps ---
-    cbonsai # ASCII bonsai trees
-    cmatrix # Matrix rain
-    pipes # Terminal screensaver
-    sl # Steam locomotive fun
-    tty-clock # Terminal clock
+    # cbonsai # ASCII bonsai trees
+    # cmatrix # Matrix rain
+    # pipes # Terminal screensaver
+    # sl # Steam locomotive fun
+    # tty-clock # Terminal clock
 
     ## --- 🆕 New Addition ---
-    anki-bin # Flashcards
+    # anki-bin # Flashcards
     lsd
     ranger
     portal
@@ -97,7 +96,7 @@
     pciutils
     dig
 
-    blender
-    godot
+    # blender
+    # godot
   ];
 }

@@ -7,6 +7,6 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
-  hardware.alsa.enablePersistence = true;
-  environment.systemPackages = with pkgs; [ pulseaudioFull ];
+  # hardware.alsa.enablePersistence = true;
+  # environment.systemPackages = with pkgs; [ pulseaudioFull ];
 }

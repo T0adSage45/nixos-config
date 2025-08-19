@@ -16,7 +16,6 @@
     btop
     powertop
     cpupower-gui
-    kitty
   ];
 
   services = {
