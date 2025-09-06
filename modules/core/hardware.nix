@@ -17,5 +17,6 @@
     };
     nvidia.open = true;
   };
+
   hardware.enableRedistributableFirmware = true;
 }

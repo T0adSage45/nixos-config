@@ -5,11 +5,13 @@
     networkmanager = {
       enable = true;
       wifi.powersave = false;
+      dns = "none";
     };
     nameservers = [
-      "8.8.8.8"
-      "8.8.4.4"
+      "1.0.0.1"
       "1.1.1.1"
+      # "8.8.8.8"
+      # "8.8.4.4"
     ];
     firewall = {
       enable = true;

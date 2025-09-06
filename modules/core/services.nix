@@ -19,10 +19,9 @@
 
     fstrim.enable = true;
 
-    logind = {
-      extraConfig = "HandlePowerKey=ignore";
-      lidSwitch = "suspend";
-      lidSwitchExternalPower = "suspend";
+    logind.settings.Login = {
+      HandleLidSwitch = "suspend";
+      HandleLidSwitchExternalPower = "suspend";
     };
 
     # xrdp = {

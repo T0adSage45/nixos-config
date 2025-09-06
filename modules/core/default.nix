@@ -13,7 +13,7 @@
     ./services.nix
     ./system.nix
     ./user.nix
-    ./virtualisation.nix
+    # ./virtualisation.nix
     ./wayland.nix
     ./xremap.nix
   ];

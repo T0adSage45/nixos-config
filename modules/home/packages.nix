@@ -98,5 +98,9 @@
 
     # blender
     # godot
+    steam
+    spotify
+    lutris
+    wine
   ];
 }

@@ -9,7 +9,7 @@
     monitors = All
     wallpaper = ~/Pictures/wallpapers/others/1.jpg
     backend = swww
-    fit = fit
+    fill = fit
     sort = name
     color = #F5C672
     subfolders = true

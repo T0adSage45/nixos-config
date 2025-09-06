@@ -11,13 +11,14 @@
     ANKI_WAYLAND = "1";
     DIRENV_LOG_FORMAT = "";
     WLR_DRM_NO_ATOMIC = "1";
-    QT_AUTO_SCREEN_SCALE_FACTOR = "1";
+    QT_AUTO_SCREEN_SCALE_FACTOR = "0.7";
     QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
     QT_QPA_PLATFORM = "xcb";
     QT_QPA_PLATFORMTHEME = "qt5ct";
     QT_STYLE_OVERRIDE = "kvantum";
     MOZ_ENABLE_WAYLAND = "1";
-    EDITOR = "neovim";
+    EDITOR = "nvim";
+    VISUAL = "nvim";
     BROWSER = "brave";
     WLR_BACKEND = "vulkan";
     WLR_RENDERER = "vulkan";
@@ -27,6 +28,6 @@
     XDG_SESSION_DESKTOP = "Hyprland";
     SDL_VIDEODRIVER = "wayland";
     CLUTTER_BACKEND = "wayland";
-    GTK_THEME = "Colloid-Green-Dark-Gruvbox";
+    GTK_THEME = "catppuccin-collide-dark";
   };
 }

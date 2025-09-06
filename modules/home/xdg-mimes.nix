@@ -2,7 +2,10 @@
 with lib;
 let
   defaultApps = {
-    browser = [ "brave" ];
+    browser = [
+      "zen-beta"
+      "brave"
+    ];
     text = [ "nvim" ];
     image = [ "imv-dir.desktop" ];
     audio = [ "mpv.desktop" ];

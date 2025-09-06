@@ -45,6 +45,7 @@ let
   git-sessionizer = pkgs.writeScriptBin "git-sessionizer" (
     builtins.readFile ./scripts/git-sessionizer.sh
   );
+  boobie-fetch = pkgs.writeScriptBin "boobie-fetch" (builtins.readFile ./scripts/boobie-fetch.sh);
 
 in
 {
@@ -82,5 +83,6 @@ in
 
     tmux-sessionizer
     git-sessionizer
+    boobie-fetch
   ];
 }

@@ -30,7 +30,7 @@
 
       general = {
         "$mainMod" = "MOD1"; # MOD1
-        layout = "dwindle";
+        layout = "misc";
         gaps_in = 2;
         gaps_out = 2;
         border_size = 2;
@@ -137,7 +137,7 @@
         "$mainMod SHIFT, Return, exec, kitty"
         "$mainMod, Return, exec, alacritty"
         "$mainMod, B, exec, hyprctl dispatch exec toggle_waybar"
-        "$mainMod SHIFT, B, exec, hyprctl dispatch exec '[workspace 1] brave'"
+        "$mainMod SHIFT, B, exec, hyprctl dispatch exec '[workspace 1] zen-beta'"
         "$mainMod SHIFT, Q, killactive,"
         "$mainMod, F, fullscreen, 0"
         "$mainMod SHIFT, Space, exec, toggle_float"
@@ -148,7 +148,7 @@
         "$mainMod, S, togglesplit,"
         "$mainMod, T, exec, toggle_oppacity"
         "$mainMod, E, exec, nemo"
-        "$mainMod SHIFT, E, exec, hyprctl dispatch exec '[float; size 1111 700] alacritty -e lf'"
+        "$mainMod SHIFT, E, exec, hyprctl dispatch exec '[float; size 1111 700] kitty -e yazi'"
         "$mainMod SHIFT, W,exec, hyprctl dispatch exec '[float; size 925 615] waypaper'"
         "$mainMod CTRL, R , exec , random-wallpaper"
 
@@ -229,7 +229,7 @@
 
       # # binds active in lockscreen
       bindl = [
-        #   # laptop brigthness
+        # laptop brigthness
         ",XF86MonBrightnessUp, exec, brightnessctl set 5%+"
         ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
         "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
