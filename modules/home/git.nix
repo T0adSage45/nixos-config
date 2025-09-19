@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, user, ... }:
 {
   programs.git = {
     enable = true;
@@ -13,6 +13,14 @@
       diff.colorMoved = "default";
       pull.ff = "only";
       color.ui = true;
+      url = {
+        "git@github.com:".insteadOf = [
+          "gh:"
+          "https://github.com/"
+        ];
+        "git@github.com:T0adSage45/".insteadOf = "fp:";
+      };
+      core.excludesFile = "/home/${user}/.config/git/.gitignore";
     };
 
     delta = {

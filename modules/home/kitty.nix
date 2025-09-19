@@ -6,6 +6,9 @@
       window_padding_width = 5;
       hide_window_decorations = "yes";
       font_size = 9;
+      confirm_os_window_close = 0;
+      enable_audio_bell = false;
+      mouse_hide_wait = 60;
 
       # Transparency
       background_opacity = 0.90;
@@ -13,7 +16,6 @@
       # Colors
       background = "#${config.colorScheme.palette.base00}";
       # foreground = "#${config.colorScheme.palette.base06}";
-
       # Normal colors
       color0 = "#${config.colorScheme.palette.base00}";
       color1 = "#${config.colorScheme.palette.base08}";
@@ -33,6 +35,10 @@
       color13 = "#${config.colorScheme.palette.base0E}";
       color14 = "#${config.colorScheme.palette.base0C}";
       color15 = "#${config.colorScheme.palette.base07}";
+    };
+    keybindings = {
+      "ctrl+shift+left" = "no_op";
+      "ctrl+shift+right" = "no_op";
     };
   };
 }

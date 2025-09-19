@@ -1,18 +1,21 @@
-{ config, ... }:
-{
+{ config, ... }: {
   wayland.windowManager.hyprland = {
     settings = {
       # autostart
       exec-once = [
-        # "hash dbus-update-activation-environment 2>/dev/null"
-        # "dbus-update-activation-environment --all --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
-        # "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+        "dbus-update-activation-environment --all --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+        "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+
         "poweralertd &"
-        #"wl-clip-persist --clipboard both &"
-        #"wl-paste --watch cliphist store &"
-        "hyprctl setcursor bibata 20 &"
+        "wl-clip-persist --clipboard both &"
+        "wl-paste --watch cliphist store &"
+        "swaync &"
+        "vicinae server &"
+        "hyprctl setcursor bibata 14 &"
         "swww-daemon &"
-        "hyprlock"
+        # "kitty --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false"
+        # "[workspace 1 silent] brave"
+        # "[workspace 2 silent] kitty"
       ];
 
       input = {
@@ -20,18 +23,16 @@
         kb_variant = "";
         numlock_by_default = false;
         follow_mouse = 1;
-        float_switch_override_focus = 1;
+        float_switch_override_focus = 0;
         mouse_refocus = 1;
-        sensitivity = 1;
-        touchpad = {
-          natural_scroll = true;
-        };
+        sensitivity = 0;
+        touchpad = { natural_scroll = false; };
       };
 
       general = {
-        "$mainMod" = "MOD1"; # MOD1
-        layout = "misc";
-        gaps_in = 2;
+        "$mainMod" = "SUPER"; # MOD1
+        # layout = "dwindle";
+        gaps_in = 0.2;
         gaps_out = 2;
         border_size = 2;
         "col.active_border" =
@@ -50,12 +51,12 @@
         enable_swallow = true;
         focus_on_activate = true;
         new_window_takes_over_fullscreen = 2;
-        middle_click_paste = true;
+        middle_click_paste = false;
       };
 
       dwindle = {
         # no_gaps_when_only = false;
-        force_split = 1;
+        force_split = 2;
         special_scale_factor = 1.0;
         split_width_multiplier = 1.0;
         use_active_for_splits = true;
@@ -72,7 +73,7 @@
       decoration = {
         rounding = 4;
         active_opacity = 0.93;
-        inactive_opacity = 0.70;
+        inactive_opacity = 0.7;
         fullscreen_opacity = 1.0;
 
         blur = {
@@ -96,9 +97,7 @@
           color = "rgba(00000055)";
         };
       };
-      animations = {
-        enabled = false;
-      };
+      animations = { enabled = false; };
 
       #      animations = {
       #        enabled = false;
@@ -137,20 +136,27 @@
         "$mainMod SHIFT, Return, exec, kitty"
         "$mainMod, Return, exec, alacritty"
         "$mainMod, B, exec, hyprctl dispatch exec toggle_waybar"
-        "$mainMod SHIFT, B, exec, hyprctl dispatch exec '[workspace 1] zen-beta'"
+        "$mainMod SHIFT, B, exec, hyprctl dispatch exec '[workspace 1] brave'"
         "$mainMod SHIFT, Q, killactive,"
         "$mainMod, F, fullscreen, 0"
+        "$mainMod SHIFT, F, fullscreen, 1"
         "$mainMod SHIFT, Space, exec, toggle_float"
-        "$mainMod, D, exec, rofi -show drun"
+        "$mainMod SHIFT, D, exec, rofi -show drun"
+        "$mainMod, D, exec, vicinae vicinae://toggle"
         "$mainMod, Escape, exec, hyprlock"
         "$mainMod SHIFT, Escape, exec, power-menu"
         "$mainMod, P, pseudo,"
+        "$mainMod, C ,exec, hyprpicker -a"
         "$mainMod, S, togglesplit,"
         "$mainMod, T, exec, toggle_oppacity"
         "$mainMod, E, exec, nemo"
-        "$mainMod SHIFT, E, exec, hyprctl dispatch exec '[float; size 1111 700] kitty -e yazi'"
+        "$mainMod SHIFT, E, exec, hyprctl dispatch exec '[float; size 1111 700] kitty -e superfile'"
         "$mainMod SHIFT, W,exec, hyprctl dispatch exec '[float; size 925 615] waypaper'"
         "$mainMod CTRL, R , exec , random-wallpaper"
+        "$mainMod, N, exec, swaync-client -t -sw"
+        "CTRL SHIFT, Escape, exec, hyprctl dispatch exec '[workspace 9] missioncenter'"
+        "$mainMod, equal, exec, woomer"
+        "$mainMod, V, exec, vicinae vicinae://extensions/vicinae/clipboard/history"
 
         # "$mainMod SHIFT, W, exec, vm-start"
 
@@ -338,13 +344,8 @@
         "w[tg1], gapsout:2, gapsin:2"
         "f[1], gapsout:2, gapsin:2"
       ];
-    };
 
-    extraConfig = "
-      monitor=,preferred,auto,auto
-      xwayland {
-        force_zero_scaling = true
-      }
-    ";
+      xwayland = { force_zero_scaling = true; };
+    };
   };
 }

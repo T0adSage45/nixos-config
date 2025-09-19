@@ -54,8 +54,8 @@
     };
 
     libinput = {
-      enable = true;
-      touchpad.naturalScrolling = true;
+      enable = false;
+      touchpad.naturalScrolling = false;
     };
   };
 

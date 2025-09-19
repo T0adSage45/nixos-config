@@ -9,6 +9,7 @@
     ./btop.nix
     ./cava.nix
     ./fastfetch.nix # fetch tool
+    ./flow.nix
     ./fzf.nix # fuzzy finder
     ./git.nix # version control
     ./gnome.nix # gnome apps
@@ -24,12 +25,17 @@
     ./packages.nix # other packages
     ./rofi.nix # launcher
     ./scripts/scripts.nix
+    ./spicetify.nix
+    ./swayosd.nix
+    ./superfile/superfile.nix
+    ./swaync/swaync.nix
     ./themes
     ./tmux.nix
+    ./vicinae/vicinae.nix
     ./waypaper.nix # GUI wallpaper picker
     ./waybar
     ./xdg-mimes.nix # xdg config
-    ./yazi.nix # terminal file manager
+    # ./yazi.nix # terminal file manager
     ./zsh # shell
   ];
 }

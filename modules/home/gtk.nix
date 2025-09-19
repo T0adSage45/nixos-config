@@ -10,12 +10,13 @@
     noto-fonts-emoji
     noto-fonts-cjk-sans
     fantasque-sans-mono
+    maple-mono.truetype-autohint
   ];
 
   gtk = {
     enable = true;
     font = {
-      name = "fira-code";
+      name = "Maple Mono";
       size = 9;
     };
     theme = {

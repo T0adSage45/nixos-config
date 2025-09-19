@@ -4,6 +4,8 @@
   home.packages = with pkgs; [
 
     ## --- 🛠️ Essential CLI Utilities ---
+    woomer
+    mission-center
     binsider # Basic CLI helper
     bitwise # Bit/hex calculator
     caligula # Lightweight TUI for disk imaging
@@ -61,9 +63,6 @@
     valgrind # Memory checker
     nixd # Nix language server
     nixfmt-rfc-style # Nix code formatter
-    inputs.alejandra.defaultPackage.${system} # Alejandra formatter
-    inputs.zig.packages.${system}.master # Zig compiler (master branch)
-    zls # Zig Language Server
     rustup # Rust installer
     go # Go programming language
     nodejs # Node.js runtime
@@ -91,15 +90,14 @@
     # anki-bin # Flashcards
     lsd
     ranger
-    portal
     bore-cli
     pciutils
     dig
 
-    # blender
+    blender
     # godot
     steam
-    spotify
+    # spotify
     lutris
     wine
   ];

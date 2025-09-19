@@ -2,44 +2,25 @@
   description = "T0adSage45's nixos config for nerds and anti-mouse guys";
 
   inputs = {
-    # nixos-unstable channel
     nixpkgs = {
       url = "github:nixos/nixpkgs/nixos-unstable";
     };
-    # hhypr-contrib
-    hypr-contrib.url = "github:hyprwm/contrib";
-    hyprmag.url = "github:SIMULATAN/hyprmag";
-    # nur - nix user repository
-    nur = {
-      url = "github:nix-community/NUR";
-    };
-    # code-formatter for nix
-    alejandra = {
-      url = "github:kamadorueda/alejandra/3.1.0";
-    };
-    # hyprland
-    hyprland = {
-      type = "git";
-      url = "https://github.com/hyprwm/Hyprland";
-      submodules = true;
-    };
-    # yazi file-manager plugins
-    yazi-plugins = {
-      url = "github:yazi-rs/plugins";
-      flake = false;
-    };
-    # Home-Manager setup for configurations
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    #zig
-    zig = {
-      url = "github:mitchellh/zig-overlay";
+    hypr-contrib.url = "github:hyprwm/contrib";
+    hyprmag.url = "github:SIMULATAN/hyprmag";
+    hyprland = {
+      url = "github:hyprwm/Hyprland";
     };
-    # nvf- neovim config manager
-
-    # nvf.url = "github:notashelf/nvf";
+    hyprpicker = {
+      url = "github:hyprwm/hyprpicker";
+      inputs.nixpkgs.follows = "hyprland/nixpkgs";
+    };
+    nur = {
+      url = "github:nix-community/NUR";
+    };
     nix-colors = {
       url = "github:Misterio77/nix-colors";
     };
@@ -51,21 +32,21 @@
       url = "github:xremap/nix-flake";
     };
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    disko.url = "github:nix-community/disko";
-    disko.inputs.nixpkgs.follows = "nixpkgs";
+    vicinae.url = "github:vicinaehq/vicinae";
+
+    superfile.url = "github:yorukot/superfile";
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
 
   outputs =
     {
       self,
       nixpkgs,
-      disko,
       ...
     }@inputs:
     let
       user = "toadsage";
       system = "x86_64-linux";
-
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
@@ -85,8 +66,6 @@
               ;
           };
           modules = [
-            # inputs.disko.nixosModules.default
-            # (import ./hosts/laptop/disko.nix { device = "/dev/sdb"; })
             ./hosts/laptop
           ];
         };
@@ -101,8 +80,6 @@
               ;
           };
           modules = [
-            # inputs.disko.nixosModules.default
-            # (import ./hosts/server/disko.nix { device = "/dev/sdb"; })
             ./hosts/server
           ];
         };

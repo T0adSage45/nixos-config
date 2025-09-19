@@ -12,7 +12,10 @@
     useGlobalPkgs = true;
     extraSpecialArgs = { inherit inputs user host; };
     users.${user} = {
-      imports = [ ./../home ];
+      imports = [
+        inputs.spicetify-nix.homeManagerModules.spicetify
+        ./../home
+      ];
       home.username = "${user}";
       home.homeDirectory = "/home/${user}";
       home.stateVersion = "24.11";
