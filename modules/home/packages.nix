@@ -97,6 +97,7 @@
     blender
     # godot
     steam
+    qbittorrent
     # spotify
     lutris
     wine

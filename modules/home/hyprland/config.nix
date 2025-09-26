@@ -7,10 +7,9 @@
         "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
 
         "poweralertd &"
-        "wl-clip-persist --clipboard both &"
-        "wl-paste --watch cliphist store &"
+        # "wl-clip-persist --clipboard both &"
+        # "wl-paste --watch cliphist store &"
         "swaync &"
-        "vicinae server &"
         "hyprctl setcursor bibata 14 &"
         "swww-daemon &"
         # "kitty --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false"
@@ -141,8 +140,7 @@
         "$mainMod, F, fullscreen, 0"
         "$mainMod SHIFT, F, fullscreen, 1"
         "$mainMod SHIFT, Space, exec, toggle_float"
-        "$mainMod SHIFT, D, exec, rofi -show drun"
-        "$mainMod, D, exec, vicinae vicinae://toggle"
+        "$mainMod , D, exec, rofi -show drun"
         "$mainMod, Escape, exec, hyprlock"
         "$mainMod SHIFT, Escape, exec, power-menu"
         "$mainMod, P, pseudo,"
@@ -156,7 +154,6 @@
         "$mainMod, N, exec, swaync-client -t -sw"
         "CTRL SHIFT, Escape, exec, hyprctl dispatch exec '[workspace 9] missioncenter'"
         "$mainMod, equal, exec, woomer"
-        "$mainMod, V, exec, vicinae vicinae://extensions/vicinae/clipboard/history"
 
         # "$mainMod SHIFT, W, exec, vm-start"
 

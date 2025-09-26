@@ -1,7 +1,4 @@
-{
-  ...
-}:
-{
+{ ... }: {
   imports = [
     ./alacritty.nix # terminal
     ./bat.nix # better cat command
@@ -31,7 +28,7 @@
     ./swaync/swaync.nix
     ./themes
     ./tmux.nix
-    ./vicinae/vicinae.nix
+    # ./vicinae/vicinae.nix
     ./waypaper.nix # GUI wallpaper picker
     ./waybar
     ./xdg-mimes.nix # xdg config
