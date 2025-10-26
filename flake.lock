@@ -1316,11 +1316,11 @@
     "nvim-conf": {
       "flake": false,
       "locked": {
-        "lastModified": 1754063224,
-        "narHash": "sha256-JhsgDAEyY0fpcj0c4DWAfPTCZ7XRoXxAcZnmMqUyBVE=",
+        "lastModified": 1761212565,
+        "narHash": "sha256-cUrWFwRnLKvb8WXqUNhSfoXMt1JNEHwfDHnE9opJRmU=",
         "owner": "T0adSage45",
         "repo": "nvim",
-        "rev": "cbe54c216b63417f7ffa47b14123851849c586f8",
+        "rev": "33183c1c16f1e6aa9bdaffa3ed378463510a0534",
         "type": "github"
       },
       "original": {
