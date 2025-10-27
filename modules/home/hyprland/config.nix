@@ -1,4 +1,5 @@
-{ config, ... }: {
+{ config, ... }:
+{
   wayland.windowManager.hyprland = {
     settings = {
       # autostart
@@ -25,7 +26,9 @@
         float_switch_override_focus = 0;
         mouse_refocus = 1;
         sensitivity = 0;
-        touchpad = { natural_scroll = false; };
+        touchpad = {
+          natural_scroll = false;
+        };
       };
 
       general = {
@@ -96,7 +99,9 @@
           color = "rgba(00000055)";
         };
       };
-      animations = { enabled = false; };
+      animations = {
+        enabled = false;
+      };
 
       #      animations = {
       #        enabled = false;
@@ -148,7 +153,7 @@
         "$mainMod, S, togglesplit,"
         "$mainMod, T, exec, toggle_oppacity"
         "$mainMod, E, exec, nemo"
-        "$mainMod SHIFT, E, exec, hyprctl dispatch exec '[float; size 1111 700] kitty -e superfile'"
+        "$mainMod SHIFT, E, exec, hyprctl dispatch exec '[float; size 1111 700] kitty -e lf'"
         "$mainMod SHIFT, W,exec, hyprctl dispatch exec '[float; size 925 615] waypaper'"
         "$mainMod CTRL, R , exec , random-wallpaper"
         "$mainMod, N, exec, swaync-client -t -sw"
@@ -342,7 +347,9 @@
         "f[1], gapsout:2, gapsin:2"
       ];
 
-      xwayland = { force_zero_scaling = true; };
+      xwayland = {
+        force_zero_scaling = true;
+      };
     };
   };
 }

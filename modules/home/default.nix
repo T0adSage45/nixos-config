@@ -1,4 +1,5 @@
-{ ... }: {
+{ ... }:
+{
   imports = [
     ./alacritty.nix # terminal
     ./bat.nix # better cat command
@@ -24,15 +25,12 @@
     ./scripts/scripts.nix
     ./spicetify.nix
     ./swayosd.nix
-    ./superfile/superfile.nix
     ./swaync/swaync.nix
     ./themes
     ./tmux.nix
-    # ./vicinae/vicinae.nix
     ./waypaper.nix # GUI wallpaper picker
     ./waybar
     ./xdg-mimes.nix # xdg config
-    # ./yazi.nix # terminal file manager
     ./zsh # shell
   ];
 }
