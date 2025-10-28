@@ -13,9 +13,10 @@
       systemd-boot = {
         enable = true;
         configurationLimit = 5;
+        # autoUpdate = false;
       };
       efi.canTouchEfiVariables = true;
-      timeout = 1;
+      timeout = 5;
     };
 
     kernelPackages = pkgs.linuxPackages_latest;
