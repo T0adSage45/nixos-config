@@ -46,7 +46,7 @@
     ncdu # Disk usage analyzer
     nitch # System fetch tool
     onefetch # Git repo info fetcher
-    treefmt2 # Project formatter
+    treefmt # Project formatter
     gtt # Google translate TUI
     tdf # CLI PDF viewer
     telegram-desktop # Messaging app

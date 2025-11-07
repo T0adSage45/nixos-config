@@ -5,6 +5,16 @@
     nixpkgs = {
       url = "github:nixos/nixpkgs/nixos-unstable";
     };
+
+    nur = {
+      url = "github:nix-community/NUR";
+    };
+
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -17,9 +27,6 @@
     hyprpicker = {
       url = "github:hyprwm/hyprpicker";
       inputs.nixpkgs.follows = "hyprland/nixpkgs";
-    };
-    nur = {
-      url = "github:nix-community/NUR";
     };
     nix-colors = {
       url = "github:Misterio77/nix-colors";

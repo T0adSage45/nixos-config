@@ -2,9 +2,11 @@
 {
   programs.git = {
     enable = true;
-
-    userName = "T0adSage45";
-    userEmail = "okami8542@gmail.com";
+    settings = {
+      user.name = "T0adSage45";
+      user.email = "okami8542@gmail.com";
+      core.editor = "nvim";
+    };
 
     extraConfig = {
       init.defaultBranch = "trunk";
@@ -23,14 +25,16 @@
       core.excludesFile = "/home/${user}/.config/git/.gitignore";
     };
 
-    delta = {
-      enable = true;
-      options = {
-        line-numbers = true;
-        side-by-side = true;
-        diff-so-fancy = true;
-        navigate = true;
-      };
+  };
+
+  programs.delta = {
+    enable = true;
+    enableGitIntegration = true;
+    options = {
+      line-numbers = true;
+      side-by-side = true;
+      diff-so-fancy = true;
+      navigate = true;
     };
   };
 

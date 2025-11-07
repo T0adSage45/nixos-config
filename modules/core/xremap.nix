@@ -5,6 +5,7 @@
   ];
 
   services.xremap = {
+    enable = true;
     withHypr = true;
     config = {
       keymap = [
