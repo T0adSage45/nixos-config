@@ -21,11 +21,12 @@
     ./obsidian.nix
     ./p10k/p10k.nix
     ./packages.nix # other packages
-    ./rofi.nix # launcher
+    ./rofi/rofi.nix # launcher
     ./scripts/scripts.nix
     ./spicetify.nix
     ./swayosd.nix
     ./swaync/swaync.nix
+    ./vicinae/vicinae.nix
     ./themes
     ./tmux.nix
     ./waypaper.nix # GUI wallpaper picker

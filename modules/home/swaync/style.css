@@ -135,7 +135,7 @@ scrollbar slider {
 
 .notification-content .app-icon {
     -gtk-icon-filter: none;
-    -gtk-icon-size: calc(25px / 3);
+    -gtk-icon-size: calc(20px / 3);
     -gtk-icon-shadow: 0 1px 4px black;
     margin: 6px;
 }
@@ -226,7 +226,7 @@ scrollbar slider {
 
 .notification-action>button {
     border-radius: 0px;
-    font-size: 16px;
+    font-size: 12px;
     padding: 1px;
 }
 
@@ -251,7 +251,7 @@ scrollbar slider {
 
 .notification-group .notification-group-headers .notification-group-icon {
     color: var(--text-primary);
-    -gtk-icon-size: 20px;
+    -gtk-icon-size: calc(20px / 3px);
     font-size: 9px;
     font-weight: 700;
     margin: 5px 5px 5px 0px;

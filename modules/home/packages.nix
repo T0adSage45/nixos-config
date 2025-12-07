@@ -4,6 +4,11 @@
   home.packages = with pkgs; [
 
     ## --- 🛠️ Essential CLI Utilities ---
+
+    # houdini
+    blender
+    godot
+
     woomer
     mission-center
     binsider # Basic CLI helper
@@ -94,8 +99,6 @@
     pciutils
     dig
 
-    blender
-    # godot
     steam
     qbittorrent
     # spotify

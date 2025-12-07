@@ -19,15 +19,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hypr-contrib.url = "github:hyprwm/contrib";
-    hyprmag.url = "github:SIMULATAN/hyprmag";
-    hyprland = {
-      url = "github:hyprwm/Hyprland";
-    };
-    hyprpicker = {
-      url = "github:hyprwm/hyprpicker";
-      inputs.nixpkgs.follows = "hyprland/nixpkgs";
-    };
     nix-colors = {
       url = "github:Misterio77/nix-colors";
     };
@@ -38,8 +29,14 @@
     xremap = {
       url = "github:xremap/nix-flake";
     };
-    zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
+    maple-mono = {
+      url = "github:subframe7536/maple-font/variable";
+      flake = false;
+    };
+
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    vicinae.url = "github:vicinaehq/vicinae";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
 

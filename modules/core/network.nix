@@ -1,4 +1,5 @@
-{ ... }: {
+{ ... }:
+{
   networking = {
     hostName = "myoboku";
     networkmanager = {
@@ -7,10 +8,10 @@
       dns = "none";
     };
     nameservers = [
-      "1.0.0.1"
+      # "1.0.0.1"
       "1.1.1.1"
-      # "8.8.8.8"
-      # "8.8.4.4"
+      "8.8.8.8"
+      "8.8.4.4"
     ];
     firewall = {
       enable = true;

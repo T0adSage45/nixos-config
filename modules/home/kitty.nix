@@ -8,7 +8,7 @@
       font_size = 9;
       confirm_os_window_close = 0;
       enable_audio_bell = false;
-      mouse_hide_wait = 60;
+      mouse_hide_wait = 40;
 
       # Transparency
       background_opacity = 0.90;
