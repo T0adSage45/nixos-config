@@ -18,7 +18,6 @@
       "[workspace 1 silent] brave"
       "[workspace 2 silent] kitty"
       "[workspace 4 silent] obsidian"
-
     ];
   };
 }
