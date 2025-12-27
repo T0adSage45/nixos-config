@@ -73,8 +73,9 @@
     nodejs # Node.js runtime
     python3 # Python runtime
     python312Packages.ipython # Interactive Python
+    lua5_1
     luarocks # Lua package manager
-    luajit # High-performance Lua
+    # luajit # High-performance Lua
     vscode # Visual Studio Code editor
     bun
     nixpkgs-fmt
